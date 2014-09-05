@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Markup Guide | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+
+<style>
+	header h1{font-size:30px; line-height:62px; margin-left:30px; color:#fff;}
+	.module_heading{margin-bottom:20px;}
+	
+	
+	.search_box{width:257px;}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1>Markup Guide</h1>
+</header>
+
+<section class="container no_nav">
+	<h1 class="blind">NS Instance</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="contents">
+		
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">&#9822; General Table Style</h1>
+		</div>
+		
+		<section class="ns_instance_detail_general clearfix">
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">General</h1>
+			</div>
+			<div class="content_box clearfix">
+				<table class="general">
+					<tbody>
+						<tr>
+							<th>VL Instance Name</th>
+							<td class="emphasis">SIP_Network</td>
+							<th>Network Type</th>
+							<td class="emphasis">Flat</td>
+							<th>Subnet</th>
+							<td class="emphasis">10.10.7.0/24</td>
+						</tr>
+						<tr>
+							<th>Create Time</th>
+							<td class="emphasis">2014/08/25 23:50:22</td>
+							<th>DHCP 사용</th>
+							<td class="emphasis">NO</td>
+							<th>Share</th>
+							<td class="emphasis">No</td>
+						</tr>
+						<tr>
+							<th>할당 Port수</th>
+							<td class="emphasis">5</td>
+							<th>Physical Network Type</th>
+							<td class="emphasis">Flat</td>
+							<th>Physical Network Subnet</th>
+							<td class="emphasis">10.10.0.0/24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">&#9822; Basic Table Style</h1>
+		</div>
+
+		<section>
+			
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">VL Instance Lists</h1>
+			</div>
+			
+			<table class="basic">
+				<thead>
+					<tr>
+						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						<th class="emphasis">Network Type</th>
+						<th class="emphasis">Subnet</th>
+						<th class="emphasis">DHCP 사용</th>
+						<th class="emphasis">Share 여부</th>
+						<th class="emphasis">할당 Port 수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="paging">
+				<div>
+					<p>페이지당 Row 수</p>
+					<select>
+						<option>5</option>
+						<option>10</option>
+						<option>20</option>
+					</select>
+				</div>
+				
+				<a href="#" class="arrow first on">처음 페이지</a>
+				<a href="#" class="arrow prev on">이전 페이지</a>
+				<a href="#"><strong>1</strong></a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#" class="arrow next">다음 페이지</a>
+				<a href="#" class="arrow last">끝   페이지</a>
+			</div>
+			
+		</section>
+
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">&#9822; Component Style</h1>
+		</div>
+		
+		<section>
+			<div class="section_heading_area clearfix">
+				<div>
+					
+					
+					<p class="emphasis module_heading">&#9786; 검색인풋박스</p>
+					
+					<div class="search_box">
+						<input type="text" title="검색어 입력" value="VNF Name Filter" />
+						<input type="image" src="/images/common/btn_search.png" alt="검색" />
+					</div>
+					
+					<br /><br /><br /><br /><br />
+					
+					<p class="emphasis module_heading">&#9786; 셀렉트 박스</p>
+										
+					<select class="search">
+						<option>Vendor</option>
+						<option>Vendor</option>
+						<option>Vendor</option>
+					</select>
+					
+					<br /><br /><br /><br /><br />
+					
+					
+					<p class="emphasis module_heading">&#9786; 기본 버튼 - btn class 추가</p>
+					
+					<a href="#" class="btn">New VNF Instance</a>
+					
+					<br /><br /><br />
+					
+					<p class="emphasis module_heading">&#9786; 오렌지 버튼 - btn, btn_orange 같이 추가</p>
+					
+					<a href="#" class="btn btn_orange">New VNF Instance</a>
+					
+					<p style="margin-top:20px;"> &#9775; Guide 상에서는 최소크기만 정해져 있기 때문에 좌우가 100%로 크게 보이지만 실제로 위치할때는 안쪽의 텍스트 길이만큼 조절됨</p>
+				
+				</div>
+			</div>
+		</section>
+		
+	</section>
+
+</section>
+
+</div>
+</body>
+</html>
+

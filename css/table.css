@@ -1,0 +1,12 @@
+/* table basic */
+table.basic {border-collapse:collapse; width:100%; border-bottom:1px solid #ddd; border-right:1px solid #ddd;}
+table.basic th {padding:16px 0 17px 15px; text-align:left; border-left:1px solid #ddd;border-top:1px solid #242424;}
+table.basic td {padding:11px 0 11px 15px; border-top:1px solid #ddd; border-left:1px solid #ddd; line-height:1.6;}
+table.basic td a{text-decoration:underline; color:#ff743d;}
+table.basic tbody tr:nth-child(odd) {background-color:#f9f9f9;}
+table.basic tbody tr:hover {background-color:#ffe8df;}
+
+/* general table */
+table.general{width:100%;}
+table.general th{text-align:right; padding:10px 15px;}
+table.general td{text-align:left; padding:10px 100px 10px 15px;}

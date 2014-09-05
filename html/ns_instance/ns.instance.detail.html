@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>NS Instance Detail View | NS Instance | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1 class="blind">IMS Center</h1>
+	<div class="logo"><img src="/images/common/logo.png" alt="logo" /></div>
+	<div class="right_menu">
+		<nav class="header_tab">
+			<h1 class="blind">Main Menu</h1>
+			<ul>
+				<li><a href="#" class="emphasis">Monitoring</a></li>
+				<li><a href="#" class="emphasis">Catalogue</a></li>
+				<li><a href="#" class="emphasis on">NS Instance</a></li>
+				<li><a href="#" class="emphasis">Accounts</a></li>
+			</ul>
+		</nav>
+		<div class="signal">
+			<div class="warning emphasis">5</div>
+			<div class="notice emphasis">5</div>
+			<div class="alarm">
+				<a href="#" class="alarm_off selected">off</a>
+				<a href="#" class="alarm_on">on</a>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<p>Belsnake</p>
+				<p>system_admin</p>
+			</div>
+			<a href="#"><img src="/images/common/btn_on_off.png" /></a>
+		</div>
+	</div>
+</header>
+
+<section class="container no_nav">
+	<h1 class="blind">NS Instance</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="contents">
+		
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">NS Instance Detail View</h1>
+			<div class="heading_function">
+				<a href="#" class="btn btn_orange">Delete NS Instance</a>
+				<a href="#" class="btn">NS Instance List</a>
+			</div>
+		</div>
+		
+		<section class="ns_instance_detail_general">
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">General</h1>
+			</div>
+			<div class="content_box">
+				<div class="general_list clearfix">
+					<dl>
+						<dt>NS Name</dt>
+						<dd class="emphasis">SKT vIMS</dd>
+					</dl>
+					<dl>
+						<dt>Create Time</dt>
+						<dd class="emphasis">2014/08/25 23:50:22</dd>
+					</dl>
+					<dl>
+						<dt>Update Time</dt>
+						<dd class="emphasis">2014/08/25 23:50:22</dd>
+					</dl>
+					<dl>
+						<dt>VL Instance 개수</dt>
+						<dd class="emphasis">5</dd>
+					</dl>
+					<dl>
+						<dt>VNF Instance 개수</dt>
+						<dd class="emphasis">5</dd>
+					</dl>
+					<dl>
+						<dt>Description</dt>
+						<dd class="emphasis">-</dd>
+					</dl>
+				</div>
+				
+			</div>
+		</section>
+	
+		<section>
+			
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">VL Instance Lists</h1>
+				<div class="heading_function">
+					<div class="search_box">
+						<input type="text" title="검색어 입력" value="VL Name Filter" />
+						<input type="image" src="/images/common/btn_search.png" alt="검색" />
+					</div>
+					<a href="#" class="btn btn_orange">New VL Instance</a>
+				</div>
+			</div>
+			
+			<table class="basic">
+				<thead>
+					<tr>
+						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						<th class="emphasis">Network Type</th>
+						<th class="emphasis">Subnet</th>
+						<th class="emphasis">DHCP 사용</th>
+						<th class="emphasis">Share 여부</th>
+						<th class="emphasis">할당 Port 수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="paging">
+				<div>
+					<p>페이지당 Row 수</p>
+					<select>
+						<option>5</option>
+						<option>10</option>
+						<option>20</option>
+					</select>
+				</div>
+				
+				<a href="#" class="arrow first on">처음 페이지</a>
+				<a href="#" class="arrow prev on">이전 페이지</a>
+				<!-- [D] 현재페이지 strong태그 추가 -->
+				<a href="#"><strong>1</strong></a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#" class="arrow next">다음 페이지</a>
+				<a href="#" class="arrow last">끝   페이지</a>
+			</div>
+			
+		</section>
+		
+		<section>
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">VNF Instance Lists</h1>
+				<div class="heading_function">
+					<div class="search_box">
+						<input type="text" title="검색어 입력" value="VNF Name Filter" />
+						<input type="image" src="/images/common/btn_search.png" alt="검색" />
+					</div>
+					<select class="search">
+						<option>Vendor</option>
+						<option>Vendor</option>
+						<option>Vendor</option>
+					</select>
+					<a href="#" class="btn btn_orange">New VNF Instance</a>
+				</div>
+			</div>
+			
+			<table class="basic">
+				<thead>
+					<tr>
+						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						<th class="emphasis">Network Type</th>
+						<th class="emphasis">Subnet</th>
+						<th class="emphasis">DHCP 사용</th>
+						<th class="emphasis">Share 여부</th>
+						<th class="emphasis">할당 Port 수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>VL_SIP_Network</td>
+						<td>Flat</td>
+						<td>10.10.7.0 / 24</td>
+						<td>No</td>
+						<td>No</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="paging">
+				<div>
+					<p>페이지당 Row 수</p>
+					<select>
+						<option>5</option>
+						<option>10</option>
+						<option>20</option>
+					</select>
+				</div>
+				
+				<a href="#" class="arrow first on">처음 페이지</a>
+				<a href="#" class="arrow prev on">이전 페이지</a>
+				<!-- [D] 현재페이지 strong태그 추가 -->
+				<a href="#"><strong>1</strong></a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#" class="arrow next">다음 페이지</a>
+				<a href="#" class="arrow last">끝   페이지</a>
+			</div>
+			
+		</section>
+		
+	</section>
+
+</section>
+
+</div>
+</body>
+</html>
+

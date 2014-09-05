@@ -1,0 +1,59 @@
+@font-face{
+	font-family:'noto';
+	font-style:normal;
+	font-weight:400;
+	src:url(fonts/NotoSansKR-Regular.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/NotoSansKR-Regular.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/NotoSansKR-Regular.woff) format("woff"), /* Modern Browser */
+			url(fonts/NotoSansKR-Regular.ttf) format('truetype'); /* Safari, Android, Ios */
+}
+
+@font-face{
+	font-family:'noto';
+	font-style:normal;
+	font-weight:700;
+	src:url(fonts/NotoSansKR-Medium.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/NotoSansKR-Medium.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/NotoSansKR-Medium.woff) format("woff"), /* Modern Browser */
+			url(fonts/NotoSansKR-Medium.ttf) format('truetype'); /* Safari, Android, Ios */
+}
+
+@font-face{
+	font-family:'noto';
+	font-style:normal;
+	font-weight:800;
+	src:url(fonts/NotoSansKR-Bold.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/NotoSansKR-Bold.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/NotoSansKR-Bold.woff) format("woff"), /* Modern Browser */
+			url(fonts/NotoSansKR-Bold.ttf) format('truetype'); /* Safari, Android, Ios */
+}
+
+@font-face{
+	font-family:'ubuntu';
+	font-style:normal;
+	font-weight:400;
+	src:url(fonts/Ubuntu-R.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/Ubuntu-R.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/Ubuntu-R.woff) format("woff"), /* Modern Browser */
+			url(fonts/Ubuntu-R.ttf) format('truetype'); /* Safari, Android, Ios */
+}
+
+@font-face{
+	font-family:'ubuntu';
+	font-style:normal;
+	font-weight:700;
+	src:url(fonts/Ubuntu-M.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/Ubuntu-M.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/Ubuntu-M.woff) format("woff"), /* Modern Browser */
+			url(fonts/Ubuntu-M.ttf) format('truetype'); /* Safari, Android, Ios */
+}
+
+@font-face{
+	font-family:'ubuntu';
+	font-style:normal;
+	font-weight:800;
+	src:url(fonts/Ubuntu-B.eot) format('eot'); /* IE9 호환성 보기 모드 */
+	src:url(fonts/Ubuntu-B.eot?#iefix) format("embedded-opentype"), /* IE6 ~ IE8 */
+			url(fonts/Ubuntu-B.woff) format("woff"), /* Modern Browser */
+			url(fonts/Ubuntu-B.ttf) format('truetype'); /* Safari, Android, Ios */
+}

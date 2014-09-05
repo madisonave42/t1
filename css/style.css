@@ -1,0 +1,175 @@
+/* 
+ * ##############################################
+ * ######    #########    ##               ###### 
+ * ######  #  #######  #  ##  ###################
+ * ######  ##  #####  ##  ##  ###################
+ * ######  ###  ###  ###  ##              #######
+ * ######  ####  #  ####  ###############  ######
+ * ######  #####   #####  ##  ###########  ######
+ * ######  #############  ##  ###########  ######
+ * ######  #############  ####            #######
+ * ##############################################
+ */
+
+/* ==========================================================
+ * Web Font
+ * ========================================================== */
+@import url(font.css);
+
+/* ===========================================================================================
+ *	 http://meyerweb.com/eric/tools/css/reset/ 
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+ *  Reset Css
+ * =========================================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Adding Css Code */
+a {
+	text-decoration: none;
+}
+input {
+	margin:0;
+	padding:0;
+	font-family:'ubuntu', 'noto', sans-serif;
+}
+input[type=submit], input[type=image], button{
+	cursor: pointer;
+}
+
+img{display:block;}
+
+/* ==============
+ *  basic layout 
+ * ============== */
+
+/* custom font setting */
+html{overflow-y:scroll;}
+html, body{font-family:'ubuntu', 'noto', sans-serif; font-weight:400; font-size:62.5%; color:#676a6c; letter-spacing:-0.3px;}
+
+body div.wrap{font-size:13px; font-size:1.3rem; min-width:1400px;}
+header{height:62px; background:#2d3541;	border-bottom:5px solid #ff743d; position:relative;}
+header .logo{float:left;}
+header .right_menu{float:right;}
+header .header_tab{float:left; margin:20px 30px 0 0;}
+header .header_tab ul li{float:left; margin-right:2px;}
+header .header_tab ul li a{
+	display:block; width:181px; height:42px; background:url(/images/common/bg_tab.png) no-repeat 0 1px; text-align:center; line-height:42px; color:#8f8f8f;}
+header .header_tab ul li a.on{background-position:0 bottom; color:#fff;}
+
+header .signal{width:246px; height:42px; margin:20px 200px 0 0; background:#1f252d; float:left;}
+header .signal>div{height:42px; line-height:41px; float:left; text-align:center; color:#fff;}
+header .signal .warning{padding-left:22px; width:10px; background:url(/images/common/bg_warning.png) no-repeat 0 center; margin:0 25px;}
+header .signal .notice{padding-left:22px; width:10px; background:url(/images/common/bg_notice.png) no-repeat 0 center; margin:0 25px;;}
+header .signal .alarm{height:17px; margin:13px 25px 0 25px;}
+header .signal .alarm a{display:block; width:16px; height:17px; background:url(/images/common/bg_alarm.png) no-repeat; text-indent:-99999em; float:left;}
+header .signal .alarm .alarm_off{background-position:0 0;}
+header .signal .alarm .alarm_off.selected{background-position:0 -17px;}
+header .signal .alarm .alarm_on{background-position:-21px 0px;}
+header .signal .alarm .alarm_on.selected{background-position:-21px -17px;}
+
+header .login{position:absolute; top:18px; right:15px; padding-right:35px;}
+header .login>a{display:block; position:absolute; right:0; top:7px;}
+header .login .user{color:#fff;}
+header .login .user>p{text-align:right; line-height:1.2;}
+header .login .user>p:last-child{color:#999;}
+
+.container{min-width:1200px; padding:40px 60px 0 0;}
+.container.no_nav{padding-left:60px;}
+
+/* =================
+ *  page each style
+ * ================= */
+
+/* NS Instance Detail */
+.ns_instance_detail_general .content_box{border:1px solid #ddd; padding:15px; margin-bottom:30px;}
+.ns_instance_detail_general .general_list dl{float:left; height:20px; line-height:20px; margin-right:48px;}
+.ns_instance_detail_general .general_list dt{float:left; height:20px; line-height:20px; margin-right:20px;}
+.ns_instance_detail_general .general_list dd{float:left; height:20px; line-height:19px;}
+
+/* ==============
+ *  common style
+ * ============== */
+
+ /* additional */
+.emphasis{font-size:16px; font-weight:700; color:#333;}
+.blind{font-size:0; width:0; height:0; overflow:hidden;}
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:block;}
+
+/* page layout */
+.page_heading_area{border-bottom:4px solid #242424; padding-bottom:10px; margin-bottom:30px;}
+.page_heading{font-size:22px; font-weight:700; float:left; height:34px; line-height:34px; color:#333;}
+.heading_function{float:right;}
+.heading_function>*{float:left; margin-left:10px;}
+.section_heading_area{padding-bottom:10px;}
+.section_heading{font-size:18px; font-weight:800; float:left; height:34px; line-height:34px; color:#333;}
+section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
+
+/* component */
+.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:2px solid #242424; color:#242424; text-align:center; line-height:30px;}
+.btn_orange{border:2px solid #ff743d; color:#ff743d;}
+
+.search_box {padding-left:10px; height:32px; border:1px solid #ddd; background-color:#fff;}
+.search_box input[type=text] {float:left;width:226px; border:0; height:32px; line-height:32px;}
+.search_box input[type=image] {float:left; margin:8px 7px 0;}
+
+.btn_sorting_order {float:right; display:block; margin-right:14px; width:14px; height:14px; background:url(../images/common/btn_sorting_order.png) no-repeat 3px 3px; text-indent:-9999em; border:0;}
+
+/* paging */
+.paging {margin-top:20px; text-align:center;}
+.paging>* {display:inline-block; height:26px; line-height:26px; vertical-align:top;}
+.paging>div {margin-right:16px;}
+.paging>div p {float:left; margin-right:10px;}
+.paging>div select {border:1px solid #ddd; height:28px; min-width:70px;}
+.paging>a {width:27px; border:1px solid #ddd; color:#676a6c;}
+.paging>a strong {display:block; background:#494c4e; color:#fff;}
+.paging>a:hover {background:#ddd;}
+.paging>a.arrow {text-indent:-9999em;}
+.paging>a.arrow:before {float:left; width:100%; text-align:center; text-indent:0; line-height:23px;}
+.paging>a.first:before {content:'\00AB';}
+.paging>a.prev:before {content:'\2039';}
+.paging>a.next:before {content:'\203A';}
+.paging>a.last:before {content:'\00BB';}
+select.search{min-width:100px; height:34px; border:1px solid #ddd;}
+
+
+
+
+
