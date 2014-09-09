@@ -55,38 +55,31 @@
 			</div>
 		</div>
 		
-		<section class="ns_instance_detail_general">
+		<section>
 			<div class="section_heading_area clearfix">
 				<h1 class="section_heading">General</h1>
 			</div>
 			<div class="content_box">
-				<div class="general_list clearfix">
-					<dl>
-						<dt>NS Name</dt>
-						<dd class="emphasis">SKT vIMS</dd>
-					</dl>
-					<dl>
-						<dt>Create Time</dt>
-						<dd class="emphasis">2014/08/25 23:50:22</dd>
-					</dl>
-					<dl>
-						<dt>Update Time</dt>
-						<dd class="emphasis">2014/08/25 23:50:22</dd>
-					</dl>
-					<dl>
-						<dt>VL Instance 개수</dt>
-						<dd class="emphasis">5</dd>
-					</dl>
-					<dl>
-						<dt>VNF Instance 개수</dt>
-						<dd class="emphasis">5</dd>
-					</dl>
-					<dl>
-						<dt>Description</dt>
-						<dd class="emphasis">-</dd>
-					</dl>
-				</div>
-				
+				<table class="general">
+					<tbody>
+						<tr>
+							<th>NS Name</th>
+							<td class="emphasis">SKT vIMS</td>
+							<th>Create Time</th>
+							<td class="emphasis">2014/08/25 23:50:22</td>
+							<th>Update Time</th>
+							<td class="emphasis">2014/08/25 23:50:22</td>
+						</tr>
+						<tr>
+							<th>VL Instance 개수</th>
+							<td class="emphasis">5</td>
+							<th>VNF Instance 개수</th>
+							<td class="emphasis">5</td>
+							<th>Description</th>
+							<td class="emphasis">-</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
 	
@@ -108,44 +101,49 @@
 					<tr>
 						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
 						<th class="emphasis">Network Type</th>
-						<th class="emphasis">Subnet</th>
+						<th class="emphasis">Subnet(CIDR)</th>
 						<th class="emphasis">DHCP 사용</th>
 						<th class="emphasis">Share 여부</th>
 						<th class="emphasis">할당 Port 수</th>
+						<th class="emphasis">Physical Network</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>VL_SIP_Network</td>
+						<td><a href="#">VL_SIP_Network</a></td>
 						<td>Flat</td>
 						<td>10.10.7.0 / 24</td>
 						<td>No</td>
 						<td>No</td>
 						<td>2</td>
+						<td><a href="#">FLAT-INT-001, Flat, 10.10.0.0/24</a></td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
+						<td><a href="#">VL_SIP_Network</a></td>
 						<td>Flat</td>
 						<td>10.10.7.0 / 24</td>
 						<td>No</td>
 						<td>No</td>
 						<td>2</td>
+						<td><a href="#">FLAT-INT-001, Flat, 10.10.0.0/24</a></td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
+						<td><a href="#">VL_SIP_Network</a></td>
 						<td>Flat</td>
 						<td>10.10.7.0 / 24</td>
 						<td>No</td>
 						<td>No</td>
 						<td>2</td>
+						<td><a href="#">FLAT-INT-001, Flat, 10.10.0.0/24</a></td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
+						<td><a href="#">VL_SIP_Network</a></td>
 						<td>Flat</td>
 						<td>10.10.7.0 / 24</td>
 						<td>No</td>
 						<td>No</td>
 						<td>2</td>
+						<td><a href="#">FLAT-INT-001, Flat, 10.10.0.0/24</a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -162,17 +160,16 @@
 				
 				<a href="#" class="arrow first on">처음 페이지</a>
 				<a href="#" class="arrow prev on">이전 페이지</a>
-				<!-- [D] 현재페이지 strong태그 추가 -->
-				<a href="#"><strong>1</strong></a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
+				<a href="#" class="current">1</a>
 				<a href="#">5</a>
-				<a href="#">6</a>
-				<a href="#">7</a>
-				<a href="#">8</a>
-				<a href="#">9</a>
-				<a href="#">10</a>
+				<a href="#">11</a>
+				<a href="#">55</a>
+				<a href="#">111</a>
+				<a href="#">555</a>
+				<a href="#">1111</a>
+				<a href="#">5555</a>
+				<a href="#">11111</a>
+				<a href="#">55555</a>
 				<a href="#" class="arrow next">다음 페이지</a>
 				<a href="#" class="arrow last">끝   페이지</a>
 			</div>
@@ -199,47 +196,58 @@
 			<table class="basic">
 				<thead>
 					<tr>
-						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
-						<th class="emphasis">Network Type</th>
-						<th class="emphasis">Subnet</th>
-						<th class="emphasis">DHCP 사용</th>
-						<th class="emphasis">Share 여부</th>
-						<th class="emphasis">할당 Port 수</th>
+						<th class="emphasis">VNF Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						<th class="emphasis">Flavour</th>
+						<th class="emphasis">VNFC Instance No.</th>
+						<th class="emphasis">EMS IP</th>
+						<th class="emphasis">Version</th>
+						<th class="emphasis">Provider</th>
+						<th class="emphasis">Create Time</th>
+						<th class="emphasis">Status</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td><a href="#">vMSS</a></td>
+						<td>Gold</td>
+						<td>4</td>
+						<td>10.10.10.111</td>
+						<td>1.0</td>
+						<td>Telcoware</td>
+						<td>2014/07/22 23:10:13</td>
+						<td>Active</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td><a href="#">vMSS</a></td>
+						<td>Gold</td>
+						<td>4</td>
+						<td>10.10.10.111</td>
+						<td>1.0</td>
+						<td>Telcoware</td>
+						<td>2014/07/22 23:10:13</td>
+						<td>Active</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td><a href="#">vMSS</a></td>
+						<td>Gold</td>
+						<td>4</td>
+						<td>10.10.10.111</td>
+						<td>1.0</td>
+						<td>Telcoware</td>
+						<td>2014/07/22 23:10:13</td>
+						<td>Active</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td><a href="#">vMSS</a></td>
+						<td>Gold</td>
+						<td>4</td>
+						<td>10.10.10.111</td>
+						<td>1.0</td>
+						<td>Telcoware</td>
+						<td>2014/07/22 23:10:13</td>
+						<td>Active</td>
 					</tr>
+
 				</tbody>
 			</table>
 			
@@ -255,17 +263,16 @@
 				
 				<a href="#" class="arrow first on">처음 페이지</a>
 				<a href="#" class="arrow prev on">이전 페이지</a>
-				<!-- [D] 현재페이지 strong태그 추가 -->
-				<a href="#"><strong>1</strong></a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
+				<a href="#" class="current">1</a>
 				<a href="#">5</a>
-				<a href="#">6</a>
-				<a href="#">7</a>
-				<a href="#">8</a>
-				<a href="#">9</a>
-				<a href="#">10</a>
+				<a href="#">11</a>
+				<a href="#">55</a>
+				<a href="#">111</a>
+				<a href="#">555</a>
+				<a href="#">1111</a>
+				<a href="#">5555</a>
+				<a href="#">11111</a>
+				<a href="#">55555</a>
 				<a href="#" class="arrow next">다음 페이지</a>
 				<a href="#" class="arrow last">끝   페이지</a>
 			</div>

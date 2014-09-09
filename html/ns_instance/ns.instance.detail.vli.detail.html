@@ -54,56 +54,46 @@
 			</div>
 		</div>
 		
-		<section class="ns_instance_detail_general">
+		<section>
 			<div class="section_heading_area clearfix">
 				<h1 class="section_heading">General</h1>
 			</div>
 			<div class="content_box">
-				<div class="general_list clearfix">
-					<dl>
-						<dt>VL Instance Name</dt>
-						<dd class="emphasis">SIP_Network</dd>
-					</dl>
-					<dl>
-						<dt>Network Type</dt>
-						<dd class="emphasis">Flat</dd>
-					</dl>
-					<dl>
-						<dt>Subnet</dt>
-						<dd class="emphasis">10.10.7.0/24</dd>
-					</dl>
-					<dl>
-						<dt>Create Time</dt>
-						<dd class="emphasis">2014/08/25 23:50:22</dd>
-					</dl>
-					<dl>
-						<dt>DHCP 사용</dt>
-						<dd class="emphasis">NO</dd>
-					</dl>
-					<dl>
-						<dt>Share</dt>
-						<dd class="emphasis">No</dd>
-					</dl>
-					<dl>
-						<dt>할당 Port수</dt>
-						<dd class="emphasis">5</dd>
-					</dl>
-					<dl>
-						<dt>Physical Network Type</dt>
-						<dd class="emphasis">Flat</dd>
-					</dl>
-					<dl>
-						<dt>Physical Network Subnet</dt>
-						<dd class="emphasis">10.10.0.0/24</dd>
-					</dl>
-				</div>
+				<table class="general">
+					<tbody>
+						<tr>
+							<th>VL Instance Name</th>
+							<td class="emphasis">SIP_Network</td>
+							<th>Network Type</th>
+							<td class="emphasis">Flat</td>
+							<th>Subnet</th>
+							<td class="emphasis">10.10.7.0/24</td>
+						</tr>
+						<tr>
+							<th>Create Time</th>
+							<td class="emphasis">2014/08/25 23:50:22</td>
+							<th>DHCP 사용</th>
+							<td class="emphasis">NO</td>
+							<th>Share</th>
+							<td class="emphasis">No</td>
+						</tr>
+						<tr>
+							<th>할당 Port수</th>
+							<td class="emphasis">5</td>
+							<th>Physical Network Type</th>
+							<td class="emphasis">Flat</td>
+							<th>Physical Network Subnet</th>
+							<td class="emphasis">10.10.0.0/24</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
 		
 		<section>
 			
 			<div class="section_heading_area clearfix">
-				<h1 class="section_heading">VL Instance Lists</h1>
+				<h1 class="section_heading">Connection Point</h1>
 				<div class="heading_function">
 					<div class="search_box">
 						<input type="text" title="검색어 입력" value="CP Name Filter" />
@@ -115,47 +105,56 @@
 			<table class="basic">
 				<thead>
 					<tr>
-						<th class="emphasis">VL Instance Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
-						<th class="emphasis">Network Type</th>
-						<th class="emphasis">Subnet</th>
-						<th class="emphasis">DHCP 사용</th>
-						<th class="emphasis">Share 여부</th>
-						<th class="emphasis">할당 Port 수</th>
+						<th class="emphasis">CP Name<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						<th class="emphasis">VNF Instance Name</th>
+						<th class="emphasis">VNFC Instance Name</th>
+						<th class="emphasis">IP Version</th>
+						<th class="emphasis">IP Address</th>
+						<th class="emphasis">Description</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td>CP_SIP</td>
+						<td>vMSS</td>
+						<td>CRCM1</td>
+						<td>IPv4</td>
+						<td>10.10.7.11</td>
+						<td>...</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td>CP_SIP</td>
+						<td>vMSS</td>
+						<td>CRCM1</td>
+						<td>IPv4</td>
+						<td>10.10.7.11</td>
+						<td>...</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td>CP_SIP</td>
+						<td>vMSS</td>
+						<td>CRCM1</td>
+						<td>IPv4</td>
+						<td>10.10.7.11</td>
+						<td>...</td>
 					</tr>
 					<tr>
-						<td>VL_SIP_Network</td>
-						<td>Flat</td>
-						<td>10.10.7.0 / 24</td>
-						<td>No</td>
-						<td>No</td>
-						<td>2</td>
+						<td>CP_SIP</td>
+						<td>vMSS</td>
+						<td>CRCM1</td>
+						<td>IPv4</td>
+						<td>10.10.7.11</td>
+						<td>...</td>
 					</tr>
+					<tr>
+						<td>CP_SIP</td>
+						<td>vMSS</td>
+						<td>CRCM1</td>
+						<td>IPv4</td>
+						<td>10.10.7.11</td>
+						<td>...</td>
+					</tr>
+
 				</tbody>
 			</table>
 			
@@ -171,17 +170,16 @@
 				
 				<a href="#" class="arrow first on">처음 페이지</a>
 				<a href="#" class="arrow prev on">이전 페이지</a>
-				<!-- [D] 현재페이지 strong태그 추가 -->
-				<a href="#"><strong>1</strong></a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
+				<a href="#" class="current">1</a>
 				<a href="#">5</a>
-				<a href="#">6</a>
-				<a href="#">7</a>
-				<a href="#">8</a>
-				<a href="#">9</a>
-				<a href="#">10</a>
+				<a href="#">11</a>
+				<a href="#">55</a>
+				<a href="#">111</a>
+				<a href="#">555</a>
+				<a href="#">1111</a>
+				<a href="#">5555</a>
+				<a href="#">11111</a>
+				<a href="#">55555</a>
 				<a href="#" class="arrow next">다음 페이지</a>
 				<a href="#" class="arrow last">끝   페이지</a>
 			</div>
