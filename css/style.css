@@ -112,7 +112,9 @@ header .login .user>p:last-child{color:#999;}
 
 .container{min-width:1200px; padding:40px 60px 0 0;}
 .container.no_nav{padding-left:60px;}
+.container.nav{padding-left:100px;}
 
+.tab li {float:left;}
 /* =================
  *  page each style
  * ================= */
@@ -173,8 +175,14 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .paging>a.last:before {content:'\00BB';}
 
 
+/*===== Catalogue =====*/
+.flavour_id>div {float:left; margin:0 5px; width:150px; height:25px; line-height:25px; border:1px solid #242424; text-align:center;}
+.flavour_id>div.on {border:1px solid #FF743D; color:#ff743d;}
 
-
+.gauge_list {padding:10px 0; text-align:center;}
+.gauge_list > li {display:inline-block; width:300px;}
+.gauge_list > li img {display:inline;}
+.gauge_list > li p {margin-top:10px;}
 
 
 

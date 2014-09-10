@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>VNF Catalogue Detail View | Catalogue | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1 class="blind">IMS Center</h1>
+	<div class="logo"><img src="/images/common/logo.png" alt="logo" /></div>
+	<div class="right_menu">
+		<nav class="header_tab">
+			<h1 class="blind">Main Menu</h1>
+			<ul>
+				<li><a href="#" class="emphasis">Monitoring</a></li>
+				<li><a href="#" class="emphasis on">Catalogue</a></li>
+				<li><a href="#" class="emphasis">NS Instance</a></li>
+				<li><a href="#" class="emphasis">Accounts</a></li>
+			</ul>
+		</nav>
+		<div class="signal">
+			<div class="warning emphasis">5</div>
+			<div class="notice emphasis">5</div>
+			<div class="alarm">
+				<a href="#" class="alarm_off selected">off</a>
+				<a href="#" class="alarm_on">on</a>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<p>Belsnake</p>
+				<p>system_admin</p>
+			</div>
+			<a href="#"><img src="/images/common/btn_on_off.png" /></a>
+		</div>
+	</div>
+</header>
+
+<section class="container nav">
+	<h1 class="blind">Catalogue</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="contents">
+		
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">VNF Catalogue Detail View</h1>
+			<div class="heading_function">
+				<a href="#" class="btn btn_orange">Delete VNF Package</a>
+			</div>
+		</div>
+		
+		<!-- [D] 활성화된 탭의 a태그에 on클래스 추가 -->
+		<ul class="tab clearfix">
+			<li class="tab_1"><a href="#">General &amp; VNFCs</a></li>
+			<li class="tab_2"><a href="#">Connection Points &amp; Internal Virtual Links</a></li>
+			<li class="tab_3"><a href="#">Flavours</a></li>
+			<li class="tab_3"><a href="#">Monitoring Parameter &amp; Life Cycle Events &amp; VDU Dependencies</a></li>
+		</ul>
+		
+		<section>
+			
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">Connection Points</h1>
+			</div>
+			
+			<table class="basic">
+				<thead>
+					<tr>
+						<th class="emphasis">CP ID</th>
+						<th class="emphasis">Type</th>
+						<th class="emphasis">IVL ID Ref.</th>
+						<th class="emphasis">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>CP_DIAM</td>
+						<td>vPort</td>
+						<td>IVL_EXT_DIAM</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>CP_DIAM</td>
+						<td>vPort</td>
+						<td>IVL_EXT_DIAM</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>CP_DIAM</td>
+						<td>vPort</td>
+						<td>IVL_EXT_DIAM</td>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>CP_DIAM</td>
+						<td>vPort</td>
+						<td>IVL_EXT_DIAM</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="paging">
+				<div>
+					<p>페이지당 Row 수</p>
+					<select>
+						<option>5</option>
+						<option>10</option>
+						<option>20</option>
+					</select>
+				</div>
+				
+				<a href="#" class="arrow first on">처음 페이지</a>
+				<a href="#" class="arrow prev on">이전 페이지</a>
+				<a href="#" class="current">1</a>
+				<a href="#">5</a>
+				<a href="#">11</a>
+				<a href="#">55</a>
+				<a href="#">111</a>
+				<a href="#">555</a>
+				<a href="#">1111</a>
+				<a href="#">5555</a>
+				<a href="#">11111</a>
+				<a href="#">55555</a>
+				<a href="#" class="arrow next">다음 페이지</a>
+				<a href="#" class="arrow last">끝   페이지</a>
+			</div>
+			
+		</section>
+		
+		<section>
+			
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">Internal Virtual Links</h1>
+			</div>
+			
+			<table class="basic">
+				<thead>
+					<tr>
+						<th class="emphasis">IVL ID</th>
+						<th class="emphasis">Connectivity Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IVL_INT_SERVICE</td>
+						<td>E-LAN</td>
+					</tr>
+					<tr>
+						<td>IVL_EXT_DIAM</td>
+						<td>E-LAN</td>
+					</tr>
+					<tr>
+						<td>IVL_EXT_SIP</td>
+						<td>E-LAN</td>
+					</tr>
+					<tr>
+						<td>IVL_INT_SERVICE</td>
+						<td>E-LAN</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="paging">
+				<div>
+					<p>페이지당 Row 수</p>
+					<select>
+						<option>5</option>
+						<option>10</option>
+						<option>20</option>
+					</select>
+				</div>
+				
+				<a href="#" class="arrow first on">처음 페이지</a>
+				<a href="#" class="arrow prev on">이전 페이지</a>
+				<a href="#" class="current">1</a>
+				<a href="#">5</a>
+				<a href="#">11</a>
+				<a href="#">55</a>
+				<a href="#">111</a>
+				<a href="#">555</a>
+				<a href="#">1111</a>
+				<a href="#">5555</a>
+				<a href="#">11111</a>
+				<a href="#">55555</a>
+				<a href="#" class="arrow next">다음 페이지</a>
+				<a href="#" class="arrow last">끝   페이지</a>
+			</div>
+			
+		</section>
+		
+	</section>
+
+</section>
+
+</div>
+</body>
+</html>
+
