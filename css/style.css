@@ -127,7 +127,16 @@ header .login .user>p:last-child{color:#999;}
 
 
 
-.tab li {float:left;}
+.tab {margin-bottom:20px;}
+.tab li {float:left; padding-left:2px; box-sizing:border-box;}
+.tab li:first-child {padding-left:0;}
+.tab li a {display:block; font-size:16px; color:#8f8f8f; background:#c9cbce; font-weight:700; height:35px; line-height:35px; text-align:center;}
+.tab li a.on {color:#fff; background:#ff743d;}
+
+.vnf_tab .tab_1 {width:21%;}
+.vnf_tab .tab_2 {width:26%;}
+.vnf_tab .tab_3 {width:15%;}
+.vnf_tab .tab_4 {width:38%;}
 /* =================
  *  page each style
  * ================= */
