@@ -113,7 +113,7 @@ header .login .user>p:last-child{color:#999;}
 .container{position:relative;}
 .container .contents{padding:40px 60px 0 0;}
 .container.no_nav .contents{padding-left:60px;}
-.container.nav .contents{padding-left:100px;}
+.container.nav .contents{padding-left:130px;}
 
 .container.nav nav{width:100px; height:100%; position:absolute; left:0; top:0; background:#242424;}
 .container.nav nav ul li a{display:block; text-indent:-99999em; width:100px; height:100px; background:url(../images/common/lnb_catalogue.png) no-repeat;}
@@ -123,9 +123,6 @@ header .login .user>p:last-child{color:#999;}
 .container.nav nav ul li.depth2-1 a.on{background-position:-100px 0;}
 .container.nav nav ul li.depth2-2 a.on{background-position:-100px -100px;}
 .container.nav nav ul li.depth2-3 a.on{background-position:-100px -200px;}
-
-
-
 
 .tab {margin-bottom:20px;}
 .tab li {float:left; padding-left:2px; box-sizing:border-box;}
