@@ -10,3 +10,12 @@ table.basic tbody tr:hover {background-color:#ffe8df;}
 table.general{width:100%;}
 table.general th{text-align:right; padding:10px 15px;}
 table.general td{text-align:left; padding:10px 100px 10px 15px;}
+
+
+/* alarm grade */
+span.alarm_cri { display: inline-block; width: 80px; color: #fff; text-align: center; border: 1px solid #000; background-color: #fd0c00; }
+span.alarm_maj { display: inline-block; width: 80px; color: #fff; text-align: center; border: 1px solid #000; background-color: #fea400; }
+span.alarm_min { display: inline-block; width: 80px; color: #6627ff; text-align: center; border: 1px solid #000; background-color: #fffd00; }
+span.alarm_warn { display: inline-block; width: 80px; color: #6627ff; text-align: center; border: 1px solid #000; background-color: #666; }
+span.alarm_info { display: inline-block; width: 80px; color: #6627ff; text-align: center; border: 1px solid #000; background-color: #999; }
+span.alarm_nor { display: inline-block; width: 80px; color: #5c3feb; text-align: center; border: 1px solid #000; background-color: #44c89d; }
