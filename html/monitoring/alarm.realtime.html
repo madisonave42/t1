@@ -46,11 +46,29 @@
 	<h1 class="blind">Monitoring</h1>
 	
 	<nav>
-		<ul>
-			<li class="depth1-1"><a href="#">Topology</a></li>
-			<li class="depth1-2"><a href="#">Statistics</a></li>
-			<li class="depth1-3"><a href="#" class="on">Alarm</a></li>
-			<li class="depth1-4"><a href="#">Tast</a></li>
+		<ul id="lnb" class="lnb topology">
+			<li><a href="#">Topology</a></li>
+			<li><a href="#">Statistics</a>
+				<ul class="sub">
+					<li><a href="#">실시간 통계</a></li>
+					<li><a href="#">개별 통계</a></li>
+					<li><a href="#">비교 통계</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="on">Alarm</a>
+				<ul class="sub">
+					<li><a href="#">현재 발생중인 알람</a></li>
+					<li><a href="#">실시간 알람</a></li>
+					<li><a href="#">알람 History</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tast</a>
+				<ul class="sub">
+					<li><a href="#">현재 진행중인 작업</a></li>
+					<li><a href="#">실시간 작업</a></li>
+					<li><a href="#">작업 History</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 	
@@ -83,7 +101,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
@@ -95,7 +113,7 @@
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
@@ -107,7 +125,7 @@
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
@@ -119,7 +137,7 @@
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
@@ -131,7 +149,7 @@
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
@@ -143,7 +161,7 @@
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
 				<tr>
-					<td>!</td>
+					<td><img src="/images/common/icon_warning.png"></td>
 					<td>Controller</td>
 					<td>Controller#1</td>
 					<td>2014/08/15 23:55:10</td>
