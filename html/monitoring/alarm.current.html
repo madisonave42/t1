@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Topology View | Monitoring | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1 class="blind">IMS Center</h1>
+	<div class="logo"><img src="/images/common/logo.png" alt="logo" /></div>
+	<div class="right_menu">
+		<nav class="header_tab">
+			<h1 class="blind">Main Menu</h1>
+			<ul>
+				<li><a href="#" class="emphasis on">Monitoring</a></li>
+				<li><a href="#" class="emphasis">Catalogue</a></li>
+				<li><a href="#" class="emphasis">NS Instance</a></li>
+				<li><a href="#" class="emphasis">Accounts</a></li>
+			</ul>
+		</nav>
+		<div class="signal">
+			<div class="warning emphasis">5</div>
+			<div class="notice emphasis">5</div>
+			<div class="alarm">
+				<a href="#" class="alarm_off selected">off</a>
+				<a href="#" class="alarm_on">on</a>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<p>Belsnake</p>
+				<p>system_admin</p>
+			</div>
+			<a href="#"><img src="/images/common/btn_on_off.png" /></a>
+		</div>
+	</div>
+</header>
+
+<section class="container nav">
+	<h1 class="blind">Monitoring</h1>
+	
+	<nav>
+		<ul>
+			<li class="depth1-1"><a href="#">Topology</a></li>
+			<li class="depth1-2"><a href="#">Statistics</a></li>
+			<li class="depth1-3"><a href="#" class="on">Alarm</a></li>
+			<li class="depth1-3"><a href="#">Tast</a></li>
+		</ul>
+	</nav>
+	
+	<section class="contents">
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">현재 발생중인 알람</h1>
+			
+			<div class="heading_function clearfix">
+				<select class="search">
+					<option>현재 발생중인 알람</option>
+					<option>실시간 알람</option>
+					<option>알람 History</option>
+				</select>
+
+				<div class="search_box clearfix">
+					<input type="text" title="검색어 입력" value="" />
+					<input type="image" src="/images/common/btn_search.png" alt="검색" />
+				</div>
+			</div>
+		</div>
+		
+		
+		<table class="basic">
+			<thead>
+				<tr>
+					<th scope="col" class="emphasis">인지</th>
+					<th scope="col" class="emphasis">시스템 유형</th>
+					<th scope="col" class="emphasis">시스템명</th>
+					<th scope="col" class="emphasis">장애 발생*해지 시각</th>
+					<th scope="col" class="emphasis">장애 카테고리</th>
+					<th scope="col" class="emphasis">장애 원인</th>
+					<th scope="col" class="emphasis">장애 등급</th>
+					<th scope="col" class="emphasis">상세 정보</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_cri">CRI</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_maj">MAJ</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_min">min</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_warn">Warn</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_info">Info.</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+				<tr>
+					<td>!</td>
+					<td>Controller</td>
+					<td>Controller#1</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>Processing Error</td>
+					<td>Program Abnornally Terminated</td>
+					<td>
+						<span class="alarm_nor">NOR</span>
+					</td>
+					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="paging">
+			<div>
+				<p>페이지당 Row 수</p>
+				<select>
+					<option>5</option>
+					<option>10</option>
+					<option>20</option>
+				</select>
+			</div>
+			
+			<a href="#" class="arrow first on">처음 페이지</a>
+			<a href="#" class="arrow prev on">이전 페이지</a>
+			<a href="#" class="current">1</a>
+			<a href="#">5</a>
+			<a href="#">11</a>
+			<a href="#">55</a>
+			<a href="#">111</a>
+			<a href="#">555</a>
+			<a href="#">1111</a>
+			<a href="#">5555</a>
+			<a href="#">11111</a>
+			<a href="#">55555</a>
+			<a href="#" class="arrow next">다음 페이지</a>
+			<a href="#" class="arrow last">끝   페이지</a>
+		</div>
+	</section>
+
+</section>
+
+</div>
+</body>
+</html>
+

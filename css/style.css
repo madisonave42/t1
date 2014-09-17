@@ -116,13 +116,26 @@ header .login .user>p:last-child{color:#999;}
 .container.nav .contents{padding-left:130px;}
 
 .container.nav nav{width:100px; height:100%; position:absolute; left:0; top:0; background:#242424;}
-.container.nav nav ul li a{display:block; text-indent:-99999em; width:100px; height:100px; background:url(../images/common/lnb_catalogue.png) no-repeat;}
+.container.nav nav ul li a{display:block; text-indent:-99999em; width:100px; height:100px; }
+
+.container.nav nav ul li[class^="depth1"] a { background:url(/images/common/lnb_monitoring.png) no-repeat;}
+.container.nav nav ul li.depth1-1 a{background-position:0 0;}
+.container.nav nav ul li.depth1-2 a{background-position:0 -100px;}
+.container.nav nav ul li.depth1-3 a{background-position:0 -200px;}
+.container.nav nav ul li.depth1-4 a{background-position:0 -300px;}
+.container.nav nav ul li.depth1-1 a.on{background-position:-100px 0;}
+.container.nav nav ul li.depth1-2 a.on{background-position:-100px -100px;}
+.container.nav nav ul li.depth1-3 a.on{background-position:-100px -200px;}
+.container.nav nav ul li.depth1-4 a.on{background-position:-100px -300px;}
+
+.container.nav nav ul li[class^="depth2"] a { background:url(/images/common/lnb_catalogue.png) no-repeat;}
 .container.nav nav ul li.depth2-1 a{background-position:0 0;}
 .container.nav nav ul li.depth2-2 a{background-position:0 -100px;}
 .container.nav nav ul li.depth2-3 a{background-position:0 -200px;}
 .container.nav nav ul li.depth2-1 a.on{background-position:-100px 0;}
 .container.nav nav ul li.depth2-2 a.on{background-position:-100px -100px;}
 .container.nav nav ul li.depth2-3 a.on{background-position:-100px -200px;}
+
 
 .tab {margin-bottom:20px;}
 .tab li {float:left; padding-left:2px; box-sizing:border-box;}
@@ -134,6 +147,9 @@ header .login .user>p:last-child{color:#999;}
 .vnf_tab .tab_2 {width:26%;}
 .vnf_tab .tab_3 {width:15%;}
 .vnf_tab .tab_4 {width:38%;}
+
+.topology_tab .tab_1 { width: 25%; }
+.topology_tab .tab_2 { width: 25%; }
 /* =================
  *  page each style
  * ================= */
