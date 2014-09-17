@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Task History | Monitoring | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1 class="blind">IMS Center</h1>
+	<div class="logo"><img src="/images/common/logo.png" alt="logo" /></div>
+	<div class="right_menu">
+		<nav class="header_tab">
+			<h1 class="blind">Main Menu</h1>
+			<ul>
+				<li><a href="#" class="emphasis on">Monitoring</a></li>
+				<li><a href="#" class="emphasis">Catalogue</a></li>
+				<li><a href="#" class="emphasis">NS Instance</a></li>
+				<li><a href="#" class="emphasis">Accounts</a></li>
+			</ul>
+		</nav>
+		<div class="signal">
+			<div class="warning emphasis">5</div>
+			<div class="notice emphasis">5</div>
+			<div class="alarm">
+				<a href="#" class="alarm_off selected">off</a>
+				<a href="#" class="alarm_on">on</a>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<p>Belsnake</p>
+				<p>system_admin</p>
+			</div>
+			<a href="#"><img src="/images/common/btn_on_off.png" /></a>
+		</div>
+	</div>
+</header>
+
+<section class="container nav">
+	<h1 class="blind">Monitoring</h1>
+	
+	<nav>
+		<ul>
+			<li class="depth1-1"><a href="#">Topology</a></li>
+			<li class="depth1-2"><a href="#">Statistics</a></li>
+			<li class="depth1-3"><a href="#">Alarm</a></li>
+			<li class="depth1-4"><a href="#" class="on">Tast</a></li>
+		</ul>
+	</nav>
+	
+	<section class="contents">
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">작업 History</h1>
+			
+			<div class="heading_function clearfix">
+				<select class="search">
+					<option>현재 진행중인 작업</option>
+					<option>실시간 작업</option>
+					<option>작업 History</option>
+				</select>
+				
+				<div class="search_box clearfix">
+					<input type="text" title="검색어 입력" value="" />
+					<input type="image" src="/images/common/btn_search.png" alt="검색" />
+				</div>
+			</div>
+		</div>
+		
+		
+		<table class="basic">
+			<thead>
+				<tr>
+					<th scope="col" class="emphasis">시스템 유형<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">시스템<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 항목<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 이벤트 ID<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 내용<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 상태<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업자<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 시작 시각<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 완료 시각<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
+					<td>
+						<span class="task_complete">완료</span>
+					</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
+					<td>
+						<span class="task_process">진행중</span>
+					</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
+					<td>
+						<span class="task_error">에러</span>
+					</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
+					<td>
+						<span class="task_error">에러</span>
+					</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
+					<td>
+						<span class="task_error">에러</span>
+					</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+		<div class="paging">
+			<div>
+				<p>페이지당 Row 수</p>
+				<select>
+					<option>5</option>
+					<option>10</option>
+					<option>20</option>
+				</select>
+			</div>
+			
+			<a href="#" class="arrow first on">처음 페이지</a>
+			<a href="#" class="arrow prev on">이전 페이지</a>
+			<a href="#" class="current">1</a>
+			<a href="#">5</a>
+			<a href="#">11</a>
+			<a href="#">55</a>
+			<a href="#">111</a>
+			<a href="#">555</a>
+			<a href="#">1111</a>
+			<a href="#">5555</a>
+			<a href="#">11111</a>
+			<a href="#">55555</a>
+			<a href="#" class="arrow next">다음 페이지</a>
+			<a href="#" class="arrow last">끝   페이지</a>
+		</div>
+	</section>
+
+</section>
+
+</div>
+</body>
+</html>
+
