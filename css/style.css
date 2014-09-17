@@ -187,6 +187,12 @@ section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
 .search_box input[type=text] {float:left;width:226px; border:0; height:32px; line-height:32px;}
 .search_box input[type=image] {float:left; margin:8px 7px 0;}
 
+/* search date */
+.search_date { margin: 0 20px; padding: 0 20px; line-height: 32px; border-right: 1px solid #ddd; border-left: 1px solid #ddd; }
+.search_date input[type=text] { margin: 0 3px 0 10px; width:80px; height:32px; line-height:32px; border:1px solid #ddd;}
+.search_date img { display: inline-block; vertical-align: middle; }
+
+
 /* selectbox */
 select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 
@@ -221,3 +227,137 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===== component =====*/
+.btn_refresh {float:left; width:32px; height:32px; text-indent:-9999em; background:url(../images/common/btn_refresh.png) no-repeat 50% 50%;}

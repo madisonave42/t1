@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Topology View | Monitoring | IMS Center</title>
+<title>Realtime Task | Monitoring | IMS Center</title>
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/table.css" />
 <script src="/js/lib/jquery-1.11.0.min.js"></script>
@@ -49,22 +49,22 @@
 		<ul>
 			<li class="depth1-1"><a href="#">Topology</a></li>
 			<li class="depth1-2"><a href="#">Statistics</a></li>
-			<li class="depth1-3"><a href="#" class="on">Alarm</a></li>
-			<li class="depth1-4"><a href="#">Tast</a></li>
+			<li class="depth1-3"><a href="#">Alarm</a></li>
+			<li class="depth1-4"><a href="#" class="on">Tast</a></li>
 		</ul>
 	</nav>
 	
 	<section class="contents">
 		<div class="page_heading_area clearfix">
-			<h1 class="page_heading">현재 발생중인 알람</h1>
+			<h1 class="page_heading">실시간 작업</h1>
 			
 			<div class="heading_function clearfix">
 				<select class="search">
-					<option>현재 발생중인 알람</option>
-					<option>실시간 알람</option>
-					<option>알람 History</option>
+					<option>현재 진행중인 작업</option>
+					<option>실시간 작업</option>
+					<option>작업 History</option>
 				</select>
-
+				
 				<div class="search_box clearfix">
 					<input type="text" title="검색어 입력" value="" />
 					<input type="image" src="/images/common/btn_search.png" alt="검색" />
@@ -76,89 +76,84 @@
 		<table class="basic">
 			<thead>
 				<tr>
-					<th scope="col" class="emphasis">인지</th>
-					<th scope="col" class="emphasis">시스템 유형</th>
-					<th scope="col" class="emphasis">시스템명</th>
-					<th scope="col" class="emphasis">장애 발생*해지 시각</th>
-					<th scope="col" class="emphasis">장애 카테고리</th>
-					<th scope="col" class="emphasis">장애 원인</th>
-					<th scope="col" class="emphasis">장애 등급</th>
-					<th scope="col" class="emphasis">상세 정보</th>
+					<th scope="col" class="emphasis">시스템 유형<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">시스템<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 항목<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 이벤트 ID<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 내용<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 상태<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업자<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 시작 시각<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+					<th scope="col" class="emphasis">작업 완료 시각<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
-					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
 					<td>
-						<span class="alarm_cri">CRI</span>
+						<span class="task_complete">완료</span>
 					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
 				</tr>
 				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
-					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
 					<td>
-						<span class="alarm_maj">MAJ</span>
+						<span class="task_process">진행중</span>
 					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
 				</tr>
 				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
-					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
 					<td>
-						<span class="alarm_min">min</span>
+						<span class="task_error">에러</span>
 					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
 				</tr>
 				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
-					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
 					<td>
-						<span class="alarm_warn">Warn</span>
+						<span class="task_error">에러</span>
 					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+					<td>user01</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
 				</tr>
 				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
-					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
+					<td>VM</td>
+					<td>MSS CSCM 1A</td>
+					<td>CREATE VM</td>
+					<td>TASK-20140331-00001</td>
+					<td></td>
 					<td>
-						<span class="alarm_info">Info.</span>
+						<span class="task_error">에러</span>
 					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
-				</tr>
-				<tr>
-					<td>!</td>
-					<td>Controller</td>
-					<td>Controller#1</td>
+					<td>user01</td>
 					<td>2014/08/15 23:55:10</td>
-					<td>Processing Error</td>
-					<td>Program Abnornally Terminated</td>
-					<td>
-						<span class="alarm_nor">NOR</span>
-					</td>
-					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
+					<td>2014/08/15 23:55:10</td>
 				</tr>
+				
 			</tbody>
 		</table>
 		
