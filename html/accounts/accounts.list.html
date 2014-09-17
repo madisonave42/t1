@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Accounts Lists | Accounts | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="wrap">
+<header>
+	<h1 class="blind">IMS Center</h1>
+	<div class="logo"><img src="/images/common/logo.png" alt="logo" /></div>
+	<div class="right_menu">
+		<nav class="header_tab">
+			<h1 class="blind">Main Menu</h1>
+			<ul>
+				<li><a href="#" class="emphasis">Monitoring</a></li>
+				<li><a href="#" class="emphasis">Catalogue</a></li>
+				<li><a href="#" class="emphasis">NS Instance</a></li>
+				<li><a href="#" class="emphasis on">Accounts</a></li>
+			</ul>
+		</nav>
+		<div class="signal">
+			<div class="warning emphasis">5</div>
+			<div class="notice emphasis">5</div>
+			<div class="alarm">
+				<a href="#" class="alarm_off selected">off</a>
+				<a href="#" class="alarm_on">on</a>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<p>Belsnake</p>
+				<p>system_admin</p>
+			</div>
+			<a href="#"><img src="/images/common/btn_on_off.png" /></a>
+		</div>
+	</div>
+</header>
+
+<section class="container no_nav">
+	<h1 class="blind">Accounts</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="contents">
+		
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">User Lists</h1>
+			
+			<div class="heading_function clearfix">
+				<div class="search_box clearfix">
+					<input type="text" title="검색어 입력" value="User Name Filter" />
+					<input type="image" src="/images/common/btn_search.png" alt="검색" />
+				</div>
+				
+				<a href="#" class="btn btn_orange">New User</a>
+				<a href="#" class="btn btn_orange">Update User</a>
+				<a href="#" class="btn btn_orange">Delete User</a>
+				<a href="#" class="btn btn_orange">Reset PWD</a>
+			</div>
+		</div>
+		
+		<table class="basic">
+			<thead>
+				<tr>
+					<th scope="col" class="emphasis">계정유형</th>
+					<th scope="col" class="emphasis">
+						유저명
+						<!-- [D] 정렬 순서 토글버튼. 기본상태-위아래 화살표, 이후 클릭시마다 ascend, descend 클래스 번갈아가며 추가됨 -->
+						<button type="button" class="btn_sorting_order">정렬순서 변경</button>
+					</th>
+					<th scope="col" class="emphasis">성명</th>
+					<th scope="col" class="emphasis">회사</th>
+					<th scope="col" class="emphasis">부서</th>
+					<th scope="col" class="emphasis">직급</th>
+					<th scope="col" class="emphasis">전화번호</th>
+					<th scope="col" class="emphasis">이메일</th>
+					<th scope="col" class="emphasis">최종로그인</th>
+					<th scope="col" class="emphasis">최종로그아웃</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Admin</td>
+					<td>sys_adm_user1</td>
+					<td>홍길동</td>
+					<td>SK Telecom</td>
+					<td>분당 Core 운용팀</td>
+					<td>매니져</td>
+					<td>010-9123-1234</td>
+					<td>이메일</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>Monitor</td>
+					<td>sys_adm_user1</td>
+					<td>홍길동</td>
+					<td>SK Telecom</td>
+					<td>분당 Core 운용팀</td>
+					<td>매니져</td>
+					<td>010-9123-1234</td>
+					<td>이메일</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>Monitor</td>
+					<td>sys_adm_user1</td>
+					<td>홍길동</td>
+					<td>SK Telecom</td>
+					<td>분당 Core 운용팀</td>
+					<td>매니져</td>
+					<td>010-9123-1234</td>
+					<td>이메일</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>Monitor</td>
+					<td>sys_adm_user1</td>
+					<td>홍길동</td>
+					<td>SK Telecom</td>
+					<td>분당 Core 운용팀</td>
+					<td>매니져</td>
+					<td>010-9123-1234</td>
+					<td>이메일</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+				<tr>
+					<td>Monitor</td>
+					<td>sys_adm_user1</td>
+					<td>홍길동</td>
+					<td>SK Telecom</td>
+					<td>분당 Core 운용팀</td>
+					<td>매니져</td>
+					<td>010-9123-1234</td>
+					<td>이메일</td>
+					<td>2014/08/15 23:55:10</td>
+					<td>2014/08/15 23:55:10</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="paging">
+			<div>
+				<p>페이지당 Row 수</p>
+				<select>
+					<option>5</option>
+					<option>10</option>
+					<option>20</option>
+				</select>
+			</div>
+			
+			<a href="#" class="arrow first on">처음 페이지</a>
+			<a href="#" class="arrow prev on">이전 페이지</a>
+			<a href="#" class="current">1</a>
+			<a href="#">5</a>
+			<a href="#">11</a>
+			<a href="#">55</a>
+			<a href="#">111</a>
+			<a href="#">555</a>
+			<a href="#">1111</a>
+			<a href="#">5555</a>
+			<a href="#">11111</a>
+			<a href="#">55555</a>
+			<a href="#" class="arrow next">다음 페이지</a>
+			<a href="#" class="arrow last">끝   페이지</a>
+		</div>
+		
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+
