@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Add User | Accounts | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container">
+	<h1 class="blind">Accounts User 생성</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">User 생성</h1>
+		</div>
+		
+		<div class="popup_tab_area">
+			<section id="user_info" class="on">
+				<h1 class="popup_section_heading"><a href="#user_info">User 정보</a></h1>
+				<div class="popup_content_box">
+					<div>
+						<label for="user_id">유저명<span class="asterisk">*</span></label>
+						<input type="text" id="user_id" value="usr1" />
+					</div>
+					<div>
+						<label for="user_pw">패스워드<span class="asterisk">*</span></label>
+						<input type="password" id="user_pw" value="password" />
+					</div>
+					<div>
+						<label for="user_pw2">패스워드 확인<span class="asterisk">*</span></label>
+						<input type="password" id="user_pw2" value="password" />
+					</div>
+					<div>
+						<label for="user_type">계정 유형<span class="asterisk">*</span></label>
+						<select id="user_type">
+							<option>Admin</option>
+							<option>Admin</option>
+							<option>Admin</option>
+						</select>
+					</div>
+					<div>
+						<label for="description">설명</label>
+						<input type="text" id="description" value="..." />
+					</div>
+				</div>
+			</section>
+			
+			<section id="additional_info">
+				<h1 class="popup_section_heading"><a href="#additional_info">부가 정보</a></h1>
+				<div class="popup_content_box">
+					<div>
+						<label for="user_name">성명<span class="asterisk">*</span></label>
+						<input type="text" id="user_name" value="홍길동" />
+					</div>
+					<div>
+						<label for="company">회사</label>
+						<input type="text" id="company" value="SK 텔레콤" />
+					</div>
+					<div>
+						<label for="part">부서</label>
+						<input type="text" id="part" value="분당 Core 운용1팀" />
+					</div>
+					<div>
+						<label for="position">직급</label>
+						<input type="text" id="position" value="매니저" />
+					</div>
+					<div class="phone clearfix">
+						<label for="phone_num">전화번호</label>
+						<select id="phone_num">
+							<option>010</option>
+							<option>010</option>
+							<option>010</option>
+						</select>
+						<span>-</span>
+						<input type="text" title="전화번호 가운데자리" value="9123" />
+						<span>-</span>
+						<input type="text" title="전화번호 마지막자리" value="1234" />
+					</div>
+					<div class="email clearfix">
+						<label for="email">이메일</label>
+						<input type="text" id="email" title="이메일 아이디" />
+						<span>@</span>
+						<input type="text" title="이메일 도메인" />
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">생성</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+
