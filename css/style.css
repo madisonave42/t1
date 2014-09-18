@@ -142,16 +142,20 @@ header .login .user>p:last-child{color:#999;}
 .container.nav nav ul.lnb > li:nth-child(4) > a.on { background-position: -100px -300px; }
 
 
-.container.nav nav ul.lnb > li:hover ul.sub { position: absolute; top: 1px; left: 100%; }
+.container.nav nav ul.lnb > li:hover ul.sub,
 .container.nav nav ul.lnb > li > a:focus + ul.sub { position: absolute; top: 1px; left: 100%; }
 
 .container.nav nav ul.sub { position: absolute; top: -9999em; left: -9999em; width: 200px; }
+
 .container.nav nav ul.sub > li { background: #fff url(none); }
 .container.nav nav ul.sub > li > a { margin-top: -1px; padding:11px 15px 11px 15px; display: block; color: #676a6c; border:1px solid #ddd; line-height:1.6; }
 .container.nav nav ul.sub > li > a:hover,
+.container.nav nav ul.sub > li > a:focus,
 .container.nav nav ul.sub > li > a.on { color: #ff743d; }
 
-.tab {margin-bottom:20px;}
+
+
+.tab {margin-bottom:20px;}													
 .tab li {float:left; padding-left:2px; box-sizing:border-box;}
 .tab li:first-child {padding-left:0;}
 .tab li a {display:block; font-size:16px; color:#8f8f8f; background:#c9cbce; font-weight:700; height:35px; line-height:35px; text-align:center;}
