@@ -245,3 +245,55 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .gauge_list > li p {margin-top:10px;}
 
 
+
+/* ==============
+ *  popup layout 
+ * ============== */
+
+/* default layout */
+.popup_wrap {border:3px solid #242424; background:#fcfcfd; font-size:1.3rem;}
+.popup_contents {padding:25px 40px 30px; }
+.popup_container.nav .popup_contents {padding-left:130px;}
+.popup_heading_area{border-bottom:2px solid #242424; padding-bottom:10px;}
+.popup_heading{font-size:22px; font-weight:700; float:left; height:34px; line-height:34px; color:#333;}
+.popup_contents section {}
+
+.popup_contents section label {display:block; margin-bottom:9px; font-weight:800;}
+.popup_contents section input[type=text],
+.popup_contents section input[type=password] {width:100%; height:32px; line-height:32px; border:1px solid #ddd; box-sizing:border-box;}
+.popup_contents section select {width:100%; height:34px; line-height:34px; border:1px solid #ddd;}
+
+.popup_contents section .phone select,
+.popup_contents section .phone input {float:left; width:30%;}
+.popup_contents section .phone > span {float:left; width:5%; text-align:center; line-height:32px;}
+
+.popup_contents section .email select,
+.popup_contents section .email input {float:left; width:47%;}
+.popup_contents section .email > span {float:left; width:6%; text-align:center; line-height:32px;}
+
+.popup_contents .confirm_btns {margin-top:30px; text-align:center;}
+.popup_contents .confirm_btns .btn {margin:0 4px; display:inline-block; width:136px;}
+
+.popup_content_box > div {margin-top:30px;}
+
+/* tab section layout */
+.popup_tab_area {position:relative;}
+.popup_tab_area .popup_section_heading {position:absolute; top:20px; width:50%; box-sizing:border-box;}
+.popup_tab_area .popup_section_heading a {display:block; font-size:16px; color:#8f8f8f; background:#c9cbce; font-weight:700; height:35px; line-height:35px; text-align:center;}
+.popup_tab_area .on .popup_section_heading a {color:#fff; background:#ff743d;}
+
+.popup_tab_area .popup_content_box {display:none; padding-top:55px;}
+.popup_tab_area .on .popup_content_box {display:block;}
+
+/*===== component =====*/
+.asterisk {margin-left:5px; color:#ff743d; vertical-align:middle;}
+
+/* config_number */
+.config_number {position:relative;}
+.config_number > button {position:absolute; right:2px; width:20px; height:13px; background:none; border:0; font-size:10px;}
+.config_number .btn_up {top:2px;}
+.config_number .btn_down {bottom:2px;}
+
+/* user 생성 */
+#user_info .popup_section_heading {left:0; padding-right:2px;}
+#additional_info .popup_section_heading {left:50%;}
