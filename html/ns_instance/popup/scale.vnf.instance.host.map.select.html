@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Scale VNF Instance | NS Instance | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container">
+	<h1 class="blind">Scale VNF Instance</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">Host 선택</h1>
+		</div>
+	
+		<section>
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">가용 Hosts(4CPU, 2GB Memory, 512GB Disk 이상)</h1>
+
+				<div class="heading_function clearfix">
+					<div class="search_box clearfix">
+						<input type="text" title="검색어 입력" value="" />
+						<input type="image" src="/images/common/btn_search.png" alt="검색" />
+					</div>
+					<a href="#" class="btn_refresh" title="새로고침">새로고침</a>
+				</div>
+			</div>
+
+			<div class="scroll_view" style="height: 300px;">
+				<table class="basic">
+					<thead>
+						<tr>
+							<th scope="col" class="emphasis">Host명<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+							<th scope="col" class="emphasis">가용 CPU수<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+							<th scope="col" class="emphasis">가용 메모리 Size(MB)<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+							<th scope="col" class="emphasis">가용 Disk Size(GB)<button type="button" class="btn_sorting_order">정렬순서 변경</button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+						<tr>
+							<td>Host-#1</td>
+							<td>8/10</td>
+							<td>4/8</td>
+							<td>256/512</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</section>
+
+
+
+		<section class="vnf">
+			<div class="section_heading_area clearfix">
+				<h1 class="section_heading">생성된 NFC 목록</h1>
+			</div>
+
+			<div class="scroll_view" style="height: 200px;">
+				<table class="basic">
+					<thead>
+						<tr>
+							<th scope="col" class="emphasis">VNFD ID</th>
+							<th scope="col" class="emphasis">VNFC ID</th>
+							<th scope="col" class="emphasis">CPY</th>
+							<th scope="col" class="emphasis">Memory(GB)</th>
+							<th scope="col" class="emphasis">Disk(GB)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>vMSS</td>
+							<td>CRCM</td>
+							<td>2</td>
+							<td>4</td>
+							<td>512</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		
+		
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">선택</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+
