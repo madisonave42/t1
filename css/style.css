@@ -312,3 +312,103 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 /* NS Instance */
 section.vnf { margin-top: 30px; }
 .scroll_view { height: 500px; overflow-x: hidden; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal popup window */
+.modal_pop_win {position:fixed; top:20%; left:50%; margin-left:-313px; padding:0!important; width:626px; border:1px solid #757575!important; border-top:6px solid #ff743d!important; background:#fff; z-index:9999;}
+.modal_pop_win h1 {padding-left:20px; height:51px; line-height:51px; border-bottom:1px solid #dadada; background:#f9f9f9; font-size:20px; color:#494c4e; font-weight:800;}
+.modal_pop_win .modal_pop_content {padding:20px; min-height:194px; font-size:15px; line-height:1.6;}
+.modal_pop_win .modal_pop_bottom {padding-top:10px; padding-right:10px; height:44px; background:#fcfcfc;}
+.modal_pop_win .modal_pop_bottom .btn {float:right; margin-left:5px; min-width:80px;}
+
