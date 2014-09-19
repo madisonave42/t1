@@ -13,7 +13,8 @@ table.emphasis > tbody > tr > th { box-sizing: border-box; padding: 0 15px 0 15p
 table.emphasis.search > tbody > tr > th { border-left: 0px none; border-bottom: 0px none; background-color: transparent; }
 table.emphasis > tbody > tr > th > label { display: inline-block; margin: 0; font-weight: bold; }
 table.emphasis > tbody > tr > td { box-sizing: border-box; padding: 0 0 0 10px; height: 34px; font-size: 13px; vertical-align: top; border-bottom: 8px solid #fcfcfd; }
-table.emphasis > tbody > tr > td input[type=text] { box-sizing: border-box; padding-left: 10px; width: 100%; font-size: 13px; line-height: 34px; border: 1px solid #ddd; }
+table.emphasis > tbody > tr > td input[type=text],
+table.emphasis > tbody > tr > td input[type=password] { box-sizing: border-box; padding-left: 10px; width: 100%; font-size: 13px; line-height: 34px; border: 1px solid #ddd; }
 table.emphasis > tbody > tr > td input[type=text]:disabled,
 table.emphasis > tbody > tr > td input[type=text]:read-only { color: #7c7c7c; background-color: #ccc; }
 table.emphasis > tbody > tr > td input.inline { width: auto; }

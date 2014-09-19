@@ -326,101 +326,50 @@ section.vnf { margin-top: 30px; }
 .scroll_view { height: 500px; overflow-x: hidden; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Modal popup window */
 .modal_pop_win {position:fixed; top:20%; left:50%; margin-left:-313px; padding:0!important; width:626px; border:1px solid #757575!important; border-top:6px solid #ff743d!important; background:#fff; z-index:9999;}
 .modal_pop_win h1 {padding-left:20px; height:51px; line-height:51px; border-bottom:1px solid #dadada; background:#f9f9f9; font-size:20px; color:#494c4e; font-weight:800;}
 .modal_pop_win .modal_pop_content {padding:20px; min-height:194px; font-size:15px; line-height:1.6;}
 .modal_pop_win .modal_pop_bottom {padding-top:10px; padding-right:10px; height:44px; background:#fcfcfc;}
 .modal_pop_win .modal_pop_bottom .btn {float:right; margin-left:5px; min-width:80px;}
+
+
+
+/* login */
+.login_wrap {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0; 
+
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+}
+
+.login { position: relative; padding: 130px 97px 0px 98px; height: 200px; width: 431px; border: 1px solid #757575; border-top: 1px solid #b2b2b2; }
+.login:after { content: ''; position: absolute; top: 0; right: 0; left: 0; height: 86px; background: #fafafa url(/images/common/logo_sk_telecom.png) 50% 21px no-repeat; }
+.login h1 { font-size: 40px; color: #242424; font-weight: 700; text-align: center; }
+.login table.emphasis { margin-top: 35px; display: block; }
+.login table.emphasis > tbody > tr > th,
+.login table.emphasis > tbody > tr > td { border-bottom: 8px solid #fff; }
+.login table.emphasis > tbody > tr > td a.btn { height: 76px; color: #ff743d; line-height: 76px; border: 2px solid #ff743d; }
+
+
+
+
+
+
+
+
+
 
