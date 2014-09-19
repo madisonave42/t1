@@ -152,7 +152,7 @@ header .login .user>p:last-child{color:#999;}
 
 .nav nav ul.sub { position: absolute; top: -9999em; left: -9999em; width: 200px; }
 .nav nav ul.sub > li { background: #fff url(none); }
-.nav nav ul.sub > li > a { margin-top: -1px; padding:11px 15px 11px 15px; display: block; color: #676a6c; border:1px solid #ddd; line-height:1.6; }
+.nav nav ul.sub > li > a { margin-top: -1px; padding:11px 15px 11px 15px; display: block; color: #676a6c; border:1px solid #ddd; border-left:none; line-height:1.6; }
 .nav nav ul.sub > li > a:hover,
 .nav nav ul.sub > li > a:focus,
 .nav nav ul.sub > li > a.on { color: #ff743d; }
