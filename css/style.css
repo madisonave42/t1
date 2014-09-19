@@ -215,6 +215,17 @@ section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
 .search_date input[type=text] { margin: 0 3px 0 10px; width:80px; height:32px; line-height:32px; border:1px solid #ddd;}
 .search_date img { display: inline-block; vertical-align: middle; }
 
+/* checked - color */
+.search_checkbox { padding: 0 10px; height: 32px; border: 1px solid #ddd; }
+.search_checkbox label { padding: 0 10px; font-size: 12px; font-weight: bold; vertical-align: middle; }
+.search_checkbox label.cri,
+.search_checkbox label.error { color: #e9300b; }
+.search_checkbox label.maj { color: #fe711e; }
+.search_checkbox label.min,
+.search_checkbox label.process { color: #fecb1b; }
+.search_checkbox label.warn { color: #910000; }
+.search_checkbox label.info { color: #989898; }
+.search_checkbox label.complete { color: #24cc4e; }
 
 /* selectbox */
 select.search{min-width:100px; height:34px; border:1px solid #ddd;}
@@ -257,7 +268,8 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
  * ============== */
 
 /* default layout */
-.popup_wrap {border:3px solid #242424; background:#fcfcfd; font-size:1.3rem;}
+html, body { height: 100%; }
+.popup_wrap { box-sizing:border-box; height: 100%; border:3px solid #242424; background:#fcfcfd; font-size:1.3rem;}
 .popup_contents {padding:25px 40px 30px; }
 .popup_container.nav .popup_contents {padding-left:130px;}
 .popup_heading_area{margin-bottom:30px; border-bottom:2px solid #242424; padding-bottom:10px;}
@@ -283,7 +295,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .popup_content_box > div {margin-top:30px;}
 .popup_content_box > div:first-child { margin-top: 0; }
 
-.popup_container.nav nav{padding-left: 3px; width:100px; height:100%; position:absolute; left:0px; top:3px; background:#242424;}
+.popup_container.nav nav{box-sizing:border-box; padding-top: 3px; margin-left: 3px; width:100px; height:100%; position:absolute; left:0px; top:0px; background:#242424;}
 
 
 /* tab section layout */

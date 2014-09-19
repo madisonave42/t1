@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>New VNF Instance | NS Instance | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container nav">
+	<h1 class="blind">New VNF Instance</h1>
+
+	<nav>
+		<ul class="lnb new_vnf">
+			<li><a href="#" class="on">VNF 선택</a></li>
+			<li><a href="#">Config Params</a></li>
+			<li><a href="#">VL MAP</a></li>
+			<li><a href="#">Host 선택</a></li>
+			<li><a href="#">IP 할당</a></li>
+		</ul>
+	</nav>
+
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">New VNF Instance</h1>
+		</div>
+	
+		<table class="emphasis">
+			<tbody>
+				<tr>
+					<th scope="row"><label for="nsi_name">NSI Name</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="nsi_name" readonly="readonly" value="vMSS" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="vnf_name">VNF Name</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="vnf_name" value="VL_SIP_NETWORK" />
+					</td>
+					<td rowspan="2"><a href="#" class="btn">VNFD 선택</a></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="flavor">Flavor</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="flavor" readonly="readonly" value="EXI-#1" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="vdu1">VDU/Counts</th>
+					<td>
+						<p>
+							<input type="text" id="vdu1" readonly="readonly" value="LBCM(2CPU/4GB/12GB)" style="width: 300px;" />
+							<input type="text" id="counts1" readonly="readonly" value="2" style="width: 40px;" />
+						</p>
+						<p>
+							<input type="text" id="vdu1" readonly="readonly" value="LBCM(2CPU/4GB/12GB)" style="width: 300px;" />
+							<input type="text" id="counts1" readonly="readonly" value="2" style="width: 40px;" />
+						</p>
+						<p>
+							<input type="text" id="vdu1" readonly="readonly" value="LBCM(2CPU/4GB/12GB)" style="width: 300px;" />
+							<input type="text" id="counts1" readonly="readonly" value="2" style="width: 40px;" />
+						</p>
+					</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+				
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">등록</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+

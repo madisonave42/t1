@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>New VNF Instance | NS Instance | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container nav">
+	<h1 class="blind">Scale VNF Instance</h1>
+
+	<nav>
+		<ul class="lnb scale_vnf">
+			<li><a href="#" class="on">Flavor 선택</a></li>
+			<li><a href="#">Host 선택</a></li>
+			<li><a href="#">IP 할당</a></li>
+		</ul>
+	</nav>
+
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">Scale VNF Instance</h1>
+		</div>
+	
+		<section>
+			<h1 class="blind">Flavor 선택</h1>
+
+			<table class="emphasis search">
+				<tbody>
+					<tr>
+						<th scope="row"><label for="nsi_name">NSI Name</label><span class="asterisk">*</span></th>
+						<td>
+							<input type="text" id="nsi_name" readonly="readonly" value="vMSS" />
+						</td>
+						<td colspan="3"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="vnf_name">VNF Name</label><span class="asterisk">*</span></th>
+						<td>
+							<input type="text" id="vnf_name" readonly="readonly" value="vMSS" />
+						</td>
+						<td colspan="3"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="current_flavor">현재 Flavor</label></th>
+						<td>
+							<input type="text" id="current_flavor" readonly="readonly" value="Silver" />
+						</td>
+						<th scope="row"><label for="after_flavor">변경 Flavor</label><span class="asterisk">*</span></th>
+						<td>
+							<select id="after_flavor">
+								<option>Gold</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" readonly="readonly" value="Scale Out" class="inline" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<section class="flavor">
+				<div class="column">
+					<div class="scroll_view" style="height: 300px;">
+						<table class="basic">
+							<thead>
+								<tr>
+									<th scope="col" class="emphasis">VDU ID</th>
+									<th scope="col" class="emphasis">Instance No.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>LBCM</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	<!-- scroll_view -->
+
+					<div class="scroll_view" style="height: 200px;">
+						<table class="basic">
+							<thead>
+								<tr>
+									<th scope="col" class="emphasis">Assurance Param.</th>
+									<th scope="col" class="emphasis">Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	<!-- scroll_view -->
+
+				</div>	<!-- class="column" -->
+
+				
+				<div class="column">
+					<div class="scroll_view" style="height: 300px;">
+						<table class="basic">
+							<thead>
+								<tr>
+									<th scope="col" class="emphasis">VDU ID</th>
+									<th scope="col" class="emphasis">Instance No.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>LBCM</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>LBCM</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	<!-- scroll_view -->
+
+					<div class="scroll_view" style="height: 200px;">
+						<table class="basic">
+							<thead>
+								<tr>
+									<th scope="col" class="emphasis">Assurance Param.</th>
+									<th scope="col" class="emphasis">Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>CSCM.Trct</td>
+									<td>100</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	<!-- scroll_view -->
+
+				</div>
+			</section>
+		</section>
+		
+		
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">등록</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+

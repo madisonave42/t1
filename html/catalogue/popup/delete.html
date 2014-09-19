@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Delete VNF Package | Catalogue | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container">
+	<h1 class="blind">Delete VNF Package</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">Delete VNF Package</h1>
+		</div>
+	
+		<table class="emphasis">
+			<tbody>
+				<tr>
+					<th scope="row"><label for="vnfd_id">VNFD ID</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="vnfd_id" readonly="readonly" value="VND-vMSS-TELCOWARE" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="vnf_name">VNF Name</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="vnf_name" readonly="readonly" value="vMSS" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="provider">Provider</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="provider" readonly="readonly" value="Telcoware" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="version">Version</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="version" readonly="readonly" value="1.0" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="desc">Desc Version</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="desc" readonly="readonly" value="아니오" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+				
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">삭제</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+

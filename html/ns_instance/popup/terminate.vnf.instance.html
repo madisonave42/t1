@@ -25,12 +25,24 @@
 		<section>
 			<h1 class="blind"></h1>
 
-			<div>
-				<label for="vnfl_name">VNFL Name<span class="asterisk">*</span></label><input type="text" id="vnfl_name" disable="disable" />
-				<label for="flavor">Flavor</label><input type="text" id="flavor" disable="disable" />
-			</div>
-			
-			<div class="table_wrap">
+			<table class="emphasis search">
+				<tbody>
+					<tr>
+						<th scope="row"><label for="vnfi_name">VNFI Name</label><span class="asterisk">*</span></th>
+						<td>
+							<input type="text" id="vnfi_name" readonly="readonly" value="vMSS" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="flavor">Flavor</label></th>
+						<td>
+							<input type="text" id="flavor" readonly="readonly" value="Gold" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="scroll_view">
 				<table class="basic">
 					<thead>
 						<tr>

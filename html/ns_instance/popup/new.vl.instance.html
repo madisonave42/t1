@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>New VL Instance | NS Instance | IMS Center</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/event.js"></script>
+</head>
+<body>
+<div class="popup_wrap">
+<section class="popup_container">
+	<h1 class="blind">New VL Instance</h1>
+	<!-- if it is
+	<nav>2depth menu</nav>
+	-->
+	<section class="popup_contents">
+		
+		<div class="popup_heading_area clearfix">
+			<h1 class="popup_heading">New VL Instance</h1>
+		</div>
+	
+		<table class="emphasis">
+			<tbody>
+				<tr>
+					<th scope="row"><label for="ns_name">NS Instance Name</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="ns_name" readonly="readonly" value="vMSS" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="vl_name">VL Instance Name</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="vl_name" value="VL_SIP_NETWORK" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="networkid">Physical Network ID</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="networkid" readonly="readonly" value="EXI-#1" />
+					</td>
+					<td><a href="#" class="btn">네트워크 선택</a></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="cidr">cidr</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="cidr" value="192.168.10.0/24" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="dhcp">Enable DHCP</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="checkbox" id="dhcp" name="dhcp" />
+						<label for="dhcp">Enable</label>
+					</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+				
+		<div class="confirm_btns">
+			<a href="#" class="btn">취소</a>
+			<a href="#" class="btn btn_orange">등록</a>
+		</div>
+	</section>
+	<!-- // .contents -->
+
+</section>
+
+</div>
+</body>
+</html>
+
