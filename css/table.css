@@ -56,15 +56,11 @@ table.general th{text-align:right; padding:10px 15px;}
 table.general td{text-align:left; padding:10px 100px 10px 15px;}
 
 
-/* alarm grade */
-span.alarm_cri { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #ce2908; background-color: #e9300b; }
-span.alarm_maj { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #e46013; background-color: #fe711e; }
-span.alarm_min { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #edbd18; background-color: #fecb1b; }
-span.alarm_warn { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #850303; background-color: #910000; }
-span.alarm_info { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #878585; background-color: #989898; }
-span.alarm_nor { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #1cbf45; background-color: #24cc4e; }
-
-/* task status */
-span.task_complete { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #1cbf45; background-color: #24cc4e; }
-span.task_process { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #edbd18; background-color: #fecb1b; }
-span.task_error { display: inline-block; width: 80px; color: #fff; font-weight: bold; text-align: center; border: 1px solid #ce2908; background-color: #e9300b; }
+/* state color icon */
+span.state {display: inline-block; width: 80px; line-height:1.6; color: #fff; font-weight: bold; text-align: center;}
+span.state.red {border: 1px solid #ce2908; background-color: #e9300b; }
+span.state.orange {border: 1px solid #e46013; background-color: #fe711e; }
+span.state.yellow {border: 1px solid #edbd18; background-color: #fecb1b; }
+span.state.purple {border: 1px solid #850303; background-color: #910000; }
+span.state.grey {border: 1px solid #878585; background-color: #989898; }
+span.state.green {border: 1px solid #1cbf45; background-color: #24cc4e; }

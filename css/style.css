@@ -193,6 +193,7 @@ header .login .user>p:last-child{color:#999;}
 .page_heading{font-size:22px; font-weight:700; float:left; height:34px; line-height:34px; color:#333;}
 .heading_function{float:right;}
 .heading_function>*{float:left; margin-left:10px;}
+.heading_function>.btn{min-width:50px;}
 .section_heading_area{padding-bottom:10px;}
 .section_heading{font-size:18px; font-weight:800; float:left; height:34px; line-height:34px; color:#333;}
 section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
@@ -206,7 +207,7 @@ section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
 
 /* search box */
 .search_box {padding-left:10px; height:32px; border:1px solid #ddd; background-color:#fff;}
-.search_box input[type=text] {float:left;width:226px; border:0; height:32px; line-height:32px;}
+.search_box input[type=text] {float:left;width:175px; border:0; height:32px; line-height:32px;}
 .search_box input[type=image] {float:left; margin:8px 7px 0;}
 
 /* search date */
@@ -216,7 +217,7 @@ section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
 
 /* checked - color */
 .search_checkbox { padding: 0 10px; height: 32px; border: 1px solid #ddd; }
-.search_checkbox label { padding: 0 10px; font-size: 12px; font-weight: bold; vertical-align: middle; }
+.search_checkbox label { padding:0 10px 0 5px; font-size: 12px; font-weight: bold; vertical-align: middle; }
 .search_checkbox label.cri,
 .search_checkbox label.error { color: #e9300b; }
 .search_checkbox label.maj { color: #fe711e; }
@@ -248,6 +249,11 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .paging>a.next:before {content:'\203A';}
 .paging>a.last:before {content:'\00BB';}
 
+/* calendar */
+.ui-datepicker {font-size:13px;}
+.ui-widget-header {background-color:#ff743d;}
+.ui-state-default, .ui-widget-content .ui-state-default {color:#676A6C;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {color:#333;}
 
 /*===== Catalogue =====*/
 .flavour_id>div {float:left; margin:0 5px; width:150px; height:25px; line-height:25px; border:1px solid #242424; text-align:center;}
