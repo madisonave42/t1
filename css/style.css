@@ -84,7 +84,7 @@ img{display:block;}
 html{overflow-y:scroll;}
 html, body{font-family:'ubuntu', 'noto', sans-serif; font-weight:400; font-size:62.5%; color:#676a6c; letter-spacing:-0.3px;}
 
-body div.wrap{font-size:13px; font-size:1.3rem; min-width:1400px;}
+body div.wrap{font-size:13px; font-size:1.3rem; min-width:1400px; height:100%;}
 header{height:62px; background:#2d3541;	border-bottom:5px solid #ff743d; position:relative;}
 header .logo{float:left;}
 header .right_menu{float:right;}
@@ -111,7 +111,7 @@ header .login .user{color:#fff;}
 header .login .user>p{text-align:right; line-height:1.2;}
 header .login .user>p:last-child{color:#999;}
 
-.container{position:relative;}
+.container{position:relative; height:calc( 100% - 67px );}
 .container .contents{padding:40px 60px 0 0;}
 .container.no_nav .contents{padding-left:60px;}
 .container.nav .contents{padding-left:130px;}
@@ -271,7 +271,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 
 /* default layout */
 html, body { height: 100%; }
-.popup_wrap { box-sizing:border-box; border:3px solid #242424; background:#fcfcfd; font-size:1.3rem;}
+.popup_wrap { box-sizing:border-box; border:3px solid #242424; background:#fcfcfd; font-size:1.3rem; min-height:506px;}
 .popup_contents {padding:25px 40px 30px; }
 .popup_container.nav {position:relative;}
 .popup_container.nav .popup_contents {padding-left:130px;}
