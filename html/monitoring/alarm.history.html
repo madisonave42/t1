@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Topology View | Monitoring | IMS Center</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.10.4.custom.min.css" />
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/table.css" />
 <script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
 <script src="/js/event.js"></script>
 </head>
 <body>
@@ -85,10 +87,10 @@
 
 				<div class="search_date clearfix">
 					<label>장애기간(년/월/일)</label>
-					<input type="text" />
-					<a href="#"><img src="/images/common/btn_calendar.png"></a>
-					<input type="text" />
-					<a href="#"><img src="/images/common/btn_calendar.png"></a>
+					<input type="text" class="start_cal" />
+					<a href="#" class="btn_start_cal"><img src="/images/common/btn_calendar.png"></a>
+					<input type="text" class="end_cal" />
+					<a href="#" class="btn_end_cal"><img src="/images/common/btn_calendar.png"></a>
 				</div>
 
 				<div class="search_box clearfix">
@@ -130,7 +132,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_cri">CRI</span>
+						<span class="state red">CRI</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
@@ -142,7 +144,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_maj">MAJ</span>
+						<span class="state orange">MAJ</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
@@ -154,7 +156,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_min">min</span>
+						<span class="state yellow">min</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
@@ -166,7 +168,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_warn">Warn</span>
+						<span class="state purple">Warn</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
@@ -178,7 +180,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_info">Info.</span>
+						<span class="state grey">Info.</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
@@ -190,7 +192,7 @@
 					<td>Processing Error</td>
 					<td>Program Abnornally Terminated</td>
 					<td>
-						<span class="alarm_nor">NOR</span>
+						<span class="state green">NOR</span>
 					</td>
 					<td>[Keystone] PROCESS ABNORMAL ALARM OCCURRED (PID:278222)</td>
 				</tr>
