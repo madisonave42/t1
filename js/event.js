@@ -1,12 +1,18 @@
 $(function(){
 	
-	// 테이블 열 개수
+	// 편집 테이블 열 개수 계산 & 포커스 border
 	(function(){
 		
 		var $table = $('table');
 		var colNumber = $('table thead tr th').length;
 		
 		$('table thead tr th').css({width: ( 100 / colNumber ) + '%' });
+		
+		$('table td').on('focusin', function(){
+			$(this).parent('tr').addClass('focus');
+		}).on('focusout', function(){
+			$(this).parent('tr').removeClass('focus');
+		});
 		
 		
 	})();
