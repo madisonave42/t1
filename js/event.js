@@ -1,10 +1,16 @@
 $(function(){
 	
-	$(window).on('load', function(){
-		var winHeight = $(window).height();
-		$('.container').css({'min-height':winHeight - 67});
-	});
-
+	// 테이블 열 개수
+	(function(){
+		
+		var $table = $('table');
+		var colNumber = $('table thead tr th').length;
+		
+		$('table thead tr th').css({width: ( 100 / colNumber ) + '%' });
+		
+		
+	})();
+	
 	/* 팝업 탭 기능 */
 	(function(){
 		var popTabArea = $( '.popup_tab_area > section' );
