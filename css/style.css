@@ -64,7 +64,8 @@ table {
 a {
 	text-decoration: none;
 }
-input {
+input,
+select {
 	margin:0;
 	padding:0;
 	font-family:'ubuntu', 'noto', sans-serif;
@@ -156,8 +157,6 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.sub > li > a:hover,
 .nav nav ul.sub > li > a:focus,
 .nav nav ul.sub > li > a.on { color: #ff743d; }
-
-
 
 .tab {margin-bottom:20px;}													
 .tab li {float:left; padding-left:2px; box-sizing:border-box;}
@@ -260,9 +259,6 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .gauge_list > li p {margin-top:10px;}
 
 
-
-
-
 /* ==============
  *  popup layout 
  * ============== */
@@ -274,29 +270,11 @@ html, body { height: 100%; }
 .popup_container.nav .popup_contents {padding-left:130px;}
 .popup_heading_area{margin-bottom:30px; border-bottom:2px solid #242424; padding-bottom:10px;}
 .popup_heading{font-size:22px; font-weight:700; float:left; height:34px; line-height:34px; color:#333;}
-.popup_contents section {}
-
-.popup_contents section label {display:block; margin-bottom:9px; font-weight:800;}
-.popup_contents section .popup_content_box input[type=text],
-.popup_contents section .popup_content_box input[type=password] {width:100%; height:32px; line-height:32px; border:1px solid #ddd; box-sizing:border-box;}
-.popup_contents section select {width:100%; height:34px; line-height:34px; border:1px solid #ddd;}
-
-.popup_contents section .phone select,
-.popup_contents section .phone input {float:left; width:30%;}
-.popup_contents section .phone > span {float:left; width:5%; text-align:center; line-height:32px;}
-
-.popup_contents section .email select,
-.popup_contents section .email input {float:left; width:47%;}
-.popup_contents section .email > span {float:left; width:6%; text-align:center; line-height:32px;}
 
 .popup_contents .confirm_btns {margin-top:30px; text-align:center;}
 .popup_contents .confirm_btns .btn {margin:0 4px; display:inline-block; width:136px;}
 
-.popup_content_box > div {margin-top:30px;}
-.popup_content_box > div:first-child { margin-top: 0; }
-
 .popup_container.nav nav{box-sizing:border-box; padding-top: 3px; margin-left: 3px; width:100px; height:100%; position:absolute; left:0px; top:0px; background:#242424;}
-
 
 /* tab section layout */
 .popup_tab_area {position:relative;}

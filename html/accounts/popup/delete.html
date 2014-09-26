@@ -22,19 +22,22 @@
 			<h1 class="popup_heading">User 삭제</h1>
 		</div>
 		
-		<section>
-			<h1 class="blind">삭제할 User 정보</h1>
-			<div class="popup_content_box">
-				<div>
-					<label for="user_id">유저명<span class="asterisk">*</span></label>
-					<input type="text" id="user_id" value="usr1" disabled="disabled" />
-				</div>
-				<div>
-					<label for="user_name">성명<span class="asterisk">*</span></label>
-					<input type="text" id="user_name" value="홍길동" disabled="disabled" />
-				</div>
-			</div>
-		</section>
+		<table class="emphasis">
+			<tbody>
+				<tr>
+					<th scope="row"><label for="user_id">유저명</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="user_id" value="usr1" disabled="disabled" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="user_name">성명</label><span class="asterisk">*</span></th>
+					<td>
+						<input type="text" id="user_name" value="홍길동" disabled="disabled" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		
 		<div class="confirm_btns">
 			<a href="#" class="btn">취소</a>

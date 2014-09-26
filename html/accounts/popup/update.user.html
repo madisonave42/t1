@@ -26,62 +26,88 @@
 			<section id="user_info" class="on">
 				<h1 class="popup_section_heading"><a href="#user_info">User 정보</a></h1>
 				<div class="popup_content_box">
-					<div>
-						<label for="user_id">유저명<span class="asterisk">*</span></label>
-						<input type="text" id="user_id" value="usr1" />
-					</div>
-					<div>
-						<label for="user_type">계정 유형<span class="asterisk">*</span></label>
-						<select id="user_type">
-							<option>Admin</option>
-							<option>Admin</option>
-							<option>Admin</option>
-						</select>
-					</div>
-					<div>
-						<label for="description">설명</label>
-						<input type="text" id="description" value="..." />
-					</div>
+					<table class="emphasis">
+						<tbody>
+							<tr>
+								<th scope="row"><label for="user_id">유저명</label><span class="asterisk">*</span></th>
+								<td>
+									<input type="text" id="user_id" value="usr1" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="user_type">계정 유형</label><span class="asterisk">*</span></th>
+								<td>
+									<select id="user_type">
+										<option>Admin</option>
+										<option>Admin</option>
+										<option>Admin</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="description">설명</label></th>
+								<td>
+									<input type="text" id="description" value="..." />
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</section>
 			
 			<section id="additional_info">
 				<h1 class="popup_section_heading"><a href="#additional_info">부가 정보</a></h1>
 				<div class="popup_content_box">
-					<div>
-						<label for="user_name">성명<span class="asterisk">*</span></label>
-						<input type="text" id="user_name" value="홍길동" />
-					</div>
-					<div>
-						<label for="company">회사</label>
-						<input type="text" id="company" value="SK 텔레콤" />
-					</div>
-					<div>
-						<label for="part">부서</label>
-						<input type="text" id="part" value="분당 Core 운용1팀" />
-					</div>
-					<div>
-						<label for="position">직급</label>
-						<input type="text" id="position" value="매니저" />
-					</div>
-					<div class="phone clearfix">
-						<label for="phone_num">전화번호</label>
-						<select id="phone_num">
-							<option>010</option>
-							<option>010</option>
-							<option>010</option>
-						</select>
-						<span>-</span>
-						<input type="text" title="전화번호 가운데자리" value="9123" />
-						<span>-</span>
-						<input type="text" title="전화번호 마지막자리" value="1234" />
-					</div>
-					<div class="email clearfix">
-						<label for="email">이메일</label>
-						<input type="text" id="email" title="이메일 아이디" />
-						<span>@</span>
-						<input type="text" title="이메일 도메인" />
-					</div>
+					<table class="emphasis">
+						<tbody>
+							<tr>
+								<th scope="row"><label for="user_name">성명</label><span class="asterisk">*</span></th>
+								<td>
+									<input type="text" id="user_name" value="홍길동" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="company">회사</label></th>
+								<td>
+									<input type="text" id="company" value="SK 텔레콤" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="part">부서</label></th>
+								<td>
+									<input type="text" id="part" value="분당 Core 운용1팀" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="position">직급</label></th>
+								<td>
+									<input type="text" id="position" value="매니저" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="phone_num">전화번호</label></th>
+								<td class="phone">
+									<select id="phone_num">
+										<option>010</option>
+										<option>010</option>
+										<option>010</option>
+									</select>
+									<span>-</span>
+									<input type="text" title="전화번호 가운데자리" value="9123" />
+									<span>-</span>
+									<input type="text" title="전화번호 마지막자리" value="1234" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="email">이메일</label></th>
+								<td class="email">
+									<input type="text" id="email" title="이메일 아이디" />
+									<span>@</span>
+									<input type="text" title="이메일 도메인" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</section>
 		</div>

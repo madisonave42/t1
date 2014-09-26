@@ -27,6 +27,16 @@ table.emphasis > tbody > tr > td input.inline { width: auto; }
 table.emphasis > tbody > tr > td > p { overflow: hidden; }
 table.emphasis > tbody > tr > td > p> input[type=text] { float: left;}
 
+table.emphasis > tbody > tr > td select {width:100%; height:34px; line-height:34px; border:1px solid #ddd;}
+
+table.emphasis > tbody > tr > td.phone select,
+table.emphasis > tbody > tr > td.phone input {float:left; width:30%;}
+table.emphasis > tbody > tr > td.phone > span {float:left; width:5%; text-align:center; line-height:32px;}
+
+table.emphasis > tbody > tr > td.email select,
+table.emphasis > tbody > tr > td.email input {float:left; width:47%;}
+table.emphasis > tbody > tr > td.email > span {float:left; width:6%; text-align:center; line-height:32px;}
+
 .search_wrap{overflow:hidden;}
 table.dbcol.left{width:49%; float:left;}
 table.dbcol.right{width:49%; float:right;}

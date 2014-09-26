@@ -22,20 +22,21 @@
 			<h1 class="popup_heading">자동 로그아웃 설정 변경</h1>
 		</div>
 		
-		<section>
-			<h1 class="blind">로그아웃 시간</h1>
-			<div class="popup_content_box">
-				<div>
-					<label for="logout_time">자동 로그아웃 시간(초)<span class="asterisk">*</span></label>
-					<div class="config_number">
-						<input type="text" id="logout_time" value="300" />
-						<button type="button" class="btn_up" title="증가">&#9650;</button>
-						<button type="button" class="btn_down" title="감소">&#9660;</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+		<table class="emphasis">
+			<tbody>
+				<tr>
+					<th scope="row"><label for="logout_time">자동 로그아웃 시간(초)</label><span class="asterisk">*</span></th>
+					<td>
+						<div class="config_number">
+							<input type="text" id="logout_time" value="300" />
+							<button type="button" class="btn_up" title="증가">&#9650;</button>
+							<button type="button" class="btn_down" title="감소">&#9660;</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
 		<div class="confirm_btns">
 			<a href="#" class="btn">취소</a>
 			<a href="#" class="btn btn_orange">수정</a>
