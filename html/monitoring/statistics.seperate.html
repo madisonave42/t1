@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Statistics | Monitoring | IMS Center</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.10.4.custom.min.css" />
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/table.css" />
 <script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
 <script src="/js/event.js"></script>
 </head>
 <body>
@@ -74,12 +76,12 @@
 	
 	<section class="contents">
 		<div class="page_heading_area clearfix">
-			<h1 class="page_heading">실시간 통계</h1>
+			<h1 class="page_heading">개별 통계</h1>
 			
 			<div class="heading_function clearfix">
 				<select class="search">
-					<option selected="selected">실시간 통계</option>
-					<option>개별 통계</option>
+					<option>실시간 통계</option>
+					<option selected="selected">개별 통계</option>
 					<option>비교 통계</option>
 				</select>
 			</div>
@@ -113,8 +115,50 @@
 				<div class="select_items">
 					<h2 class="blind">통계 아이템 선택</h2>
 					<a href="#" class="btn btn_black">통계아이템 선택</a>
-					<a href="#" class="btn btn_orange">시작</a>
-					<a href="#" class="btn btn_orange">종료</a>
+				</div>
+				
+				<div class="select_term">
+					<h2>통계 주기</h2>
+					<select class="search">
+						<option>시간별 통계</option>
+						<option>일별 통계</option>
+						<option>주간 통계</option>
+						<option>월간 통계</option>
+						<option>년간 통계</option>
+					</select>
+				</div>
+				
+				<div class="set_term">
+					<h2>통계 기간 (년월일/시/분)</h2>
+					<div class="search_date clearfix">
+						<input type="text" class="start_cal" />
+						<a href="#" class="btn_start_cal"><img src="/images/common/btn_calendar.png"></a>
+						
+						<select class="search">
+							<option>00</option>
+							<option>01</option>
+							<option>02</option>
+						</select>
+						<select class="search">
+							<option>00</option>
+							<option>01</option>
+							<option>02</option>
+						</select>
+						<hr />
+						<input type="text" class="end_cal" />
+						<a href="#" class="btn_end_cal"><img src="/images/common/btn_calendar.png"></a>
+						
+						<select class="search">
+							<option>00</option>
+							<option>01</option>
+							<option>02</option>
+						</select>
+						<select class="search">
+							<option>00</option>
+							<option>01</option>
+							<option>02</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -131,6 +175,24 @@
 				</div>
 				
 				<div class="heading_function">
+					
+					<div class="config_number">
+						<input type="text" value="1" />
+						<button type="button" class="btn_up" title="증가">&#9650;</button>
+						<button type="button" class="btn_down" title="감소">&#9660;</button>
+					</div>
+					
+					<select class="search">
+						<option>시간</option>
+						<option>일</option>
+						<option>개월</option>
+					</select>
+					
+					<div>
+						<input type="checkbox" id="prev_term" />
+						<label for="prev_term">주기 이전 비교</label>
+					</div>
+					
 					<a href="#" class="btn btn_orange">그래프 보기</a>
 				</div>
 			</div>
