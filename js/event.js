@@ -13,8 +13,6 @@ $(function(){
 		}).on('focusout', function(){
 			$(this).parent('tr').removeClass('focus');
 		});
-		
-		
 	})();
 	
 	/* 팝업 탭 기능 */
@@ -29,91 +27,61 @@ $(function(){
 	})();
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/* 달력컨트롤 */
 	(function(){
-		var calendarArea = $('.search_date');
 		
-		calendarArea.find('input').datepicker({
-			duration: 'fast',
-			dateFormat: 'yy/mm/dd',
-			showMonthAfterYear: true,
-			monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-			dayNamesMin: ['일','월','화','수','목','금','토']
-		});
-		calendarArea.find('.btn_start_cal').on('click',function(e) {
-			e.preventDefault();
-			calendarArea.find('.start_cal').datepicker('show');
-		});
-		calendarArea.find('.btn_end_cal').on('click',function(e) {
-			e.preventDefault();
-			calendarArea.find('.end_cal').datepicker('show');
-		});
+		if( $('div').is('.search_date') ){
+			
+			var calendarArea = $('.search_date');
+			
+			calendarArea.find('input').datepicker({
+				duration: 'fast',
+				dateFormat: 'yy/mm/dd',
+				showMonthAfterYear: true,
+				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
+				dayNamesMin: ['일','월','화','수','목','금','토']
+			});
+			calendarArea.find('.btn_start_cal').on('click',function(e) {
+				e.preventDefault();
+				calendarArea.find('.start_cal').datepicker('show');
+			});
+			calendarArea.find('.btn_end_cal').on('click',function(e) {
+				e.preventDefault();
+				calendarArea.find('.end_cal').datepicker('show');
+			});
+		}
+		
 	})();
 	
+	/* tree view */
 	
-	
-	
-	
-	
-	
-	
-	
+	(function(){
+		
+		// 트리뷰 DOM, Data 로딩 - 일반, ajax
+		$(window).load(function(){
+			$('.tree_item').data('fold', 'false');
+			$('.tree_item').data('select', 'false');
+			treeView.init( $('.tree_view') );
+		});
+		$(document).ajaxComplete(function(){
+			$('.tree_item').data('fold', 'false');
+			$('.tree_item').data('select', 'false');
+			treeView.init( $('.tree_view') );
+		});
+		
+		$('body').on('click', '.tree_item', function( event ){
+			
+			if( $(this).is('.no_child') ){
+					treeView.selectVm( event, $(this) );
+			} else {
+				if( !$(this).parents().is('.step_4') ){
+					treeView.fold( event, $(this) );	
+				} else {
+					treeView.selectVm( event, $(this) );
+				}
+			}
+		});
+		
+	})();
 	
 });

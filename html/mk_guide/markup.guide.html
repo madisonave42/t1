@@ -6,6 +6,9 @@
 <title>Markup Guide | IMS Center</title>
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/table.css" />
+<script src="/js/lib/jquery-1.11.0.min.js"></script>
+<script src="/js/function.js"></script>
+<script src="/js/event.js"></script>
 <style>
 	header h1{font-size:30px; line-height:62px; margin-left:30px; color:#fff;}
 	.module_heading{margin-bottom:20px;}
@@ -199,7 +202,6 @@
 				
 				<br /><br /><br /><br /><br />
 				
-				
 				<p class="emphasis module_heading">&#9786; 기본 버튼 - btn class 추가</p>
 				<a href="#" class="btn">New VNF Instance</a>
 				
@@ -275,7 +277,164 @@
 				
 			</div>
 		</section>
+
+		<div class="page_heading_area clearfix">
+			<h1 class="page_heading">&#9822; Tree Style</h1>
+		</div>
 		
+		<section>
+			<ul class="tree_view step_1 monitoring">
+				<li>
+					<div class="tree_node">
+						<a href="#" class="tree_item">
+							<div class="tree_bg"> </div>
+							<div>Home</div>
+						</a>
+					</div>
+					<ul class="step_2">
+						<li>
+							<div class="tree_node">
+								<div class="tree_line"> </div>
+								<a href="#" class="tree_item">
+									<div class="tree_bg"> </div>
+									<div>성수국사<input type="checkbox" class="check_vm" /></div>
+								</a>
+							</div>
+							<ul class="step_3">
+								<li>
+									<div class="tree_node">
+										<div class="tree_line"> </div>
+										<a href="#" class="tree_item">
+											<div class="tree_bg"> </div>
+											<div>Host_Seongsu_#1<input type="checkbox" class="check_vm" /></div>
+										</a>
+									</div>
+									<ul class="step_4">
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node last">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+								<li>
+									<div class="tree_node last">
+										<div class="tree_line"> </div>
+										<a href="#" class="tree_item">
+											<div class="tree_bg"> </div>
+											<div>Host_Seongsu_#1<input type="checkbox" class="check_vm" /></div>
+										</a>
+									</div>
+									<ul class="step_4 last">
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node last">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<div class="tree_node last">
+								<div class="tree_line"> </div>
+								<a href="#" class="tree_item">
+									<div class="tree_bg"> </div>
+									<div>성수국사<input type="checkbox" class="check_vm" /></div>
+								</a>
+							</div>
+							<ul class="step_3 last">
+								<li>
+									<div class="tree_node last">
+										<div class="tree_line"> </div>
+										<a href="#" class="tree_item">
+											<div class="tree_bg"> </div>
+											<div>Host_Seongsu_#1<input type="checkbox" class="check_vm" /></div>
+										</a>
+									</div>
+									<ul class="step_4 last">
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="tree_node last">
+												<div class="tree_line"> </div>
+												<a href="#" class="tree_item">
+													<div class="tree_bg"> </div>
+													<div>MSS_1_CSCM_1A<input type="checkbox" class="check_vm" /></div>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
 	</section>
 
 </section>
