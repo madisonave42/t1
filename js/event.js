@@ -8,7 +8,7 @@ $(function(){
 		
 		$('table thead tr th').css({width: ( 100 / colNumber ) + '%' });
 		
-		$('table td').on('focusin', function(){
+		$('.popup_wrap table td').on('focusin', function(){
 			$(this).parent('tr').addClass('focus');
 		}).on('focusout', function(){
 			$(this).parent('tr').removeClass('focus');

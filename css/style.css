@@ -184,7 +184,7 @@ header .login .user>p:last-child{color:#999;}
 
 /*===== additional =====*/
 .emphasis{font-size:16px; font-weight:700; color:#333;}
-.blind{font-size:0; width:0; height:0; overflow:hidden;}
+.blind{margin:0!important; padding:0!important; font-size:0!important; width:0!important; height:0!important; overflow:hidden!important;}
 .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
 .clearfix {display:block;}
 
@@ -211,9 +211,12 @@ section.contents section{border-top:4px solid #e6e6e6; padding:30px 30px 20px;}
 .search_box input[type=image] {float:left; margin:8px 7px 0;}
 
 /* search date */
-.search_date { margin: 0 20px; padding: 0 20px; line-height: 32px; border-right: 1px solid #ddd; border-left: 1px solid #ddd; }
-.search_date input[type=text] { margin: 0 3px 0 10px; width:80px; height:32px; line-height:32px; border:1px solid #ddd;}
+.search_date {line-height: 32px;}
+.search_date input[type=text] {margin-right:3px; width:80px; height:32px; line-height:32px; border:1px solid #ddd;}
 .search_date img { display: inline-block; vertical-align: middle; }
+
+.heading_function .search_date {margin: 0 20px; padding: 0 20px; border-right: 1px solid #ddd; border-left: 1px solid #ddd;}
+.heading_function .search_date input[type=text] {margin-left:10px;}
 
 /* checked - color */
 .search_checkbox { padding: 0 10px; height: 32px; border: 1px solid #ddd; }
@@ -254,6 +257,12 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .ui-widget-header {background-color:#ff743d;}
 .ui-state-default, .ui-widget-content .ui-state-default {color:#676A6C;}
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {color:#333;}
+
+/* toggle_check */
+.toggle_check {position:relative; width:20px; height:20px;}
+.toggle_check input[type=checkbox] {position:absolute; top:0; left:0; margin:0; width:20px; height:20px; opacity:0;}
+.toggle_check .bg {width:20px; height:20px; background:url(/images/common/btn_toggle_check.png) no-repeat}
+.toggle_check input:checked + .bg {background-position:-20px 0}
 
 /*===== Catalogue =====*/
 .flavour_id>div {float:left; margin:0 5px; width:150px; height:25px; line-height:25px; border:1px solid #242424; text-align:center;}
@@ -323,7 +332,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
  * ============== */
 
 /* default layout */
-html, body { height: 100%; }
+body { height: 100%; }
 .popup_wrap { box-sizing:border-box; border:3px solid #242424; background:#fcfcfd; font-size:1.3rem; min-height:506px;}
 .popup_contents {padding:25px 40px 30px; }
 .popup_container.nav {position:relative;}
@@ -350,6 +359,7 @@ html, body { height: 100%; }
 
 /* config_number */
 .config_number {position:relative;}
+.config_number > input {line-height:32px;}
 .config_number > button {position:absolute; right:2px; width:20px; height:13px; background:none; border:0; font-size:10px;}
 .config_number .btn_up {top:2px;}
 .config_number .btn_down {bottom:2px;}
@@ -410,4 +420,106 @@ section.vnf { margin-top: 30px; }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============
+ *  statistics layout 
+ * ============== */
+ 
+/* statistics 공통 */
+.contents .statistics_setting {float:left; padding-left:20px;	padding-right:20px;	width:260px;}
+.statistics_setting .select_type {padding-top:20px;	border-top:1px solid #ddd;}
+.statistics_setting .select_type .title {margin-bottom:9px;}
+.statistics_setting .select_type .title input {vertical-align:middle;}
+.statistics_setting .select_type .title label {margin-left:9px; font-size:14px;	font-weight:800; vertical-align:middle;}
+.statistics_setting .select_type .treeview {margin-bottom:20px; height:400px;	border:1px solid #ddd;	overflow:auto;}
+.statistics_setting .select_type .search {width:100%;}
+
+.statistics_setting .option > div {margin-top:30px;}
+.statistics_setting .option > div h2 {margin-bottom:9px;font-size:14px;}
+
+.statistics_table {margin-left:330px;}
+.statistics_table .section_heading_area {height:34px;}
+.statistics_table .section_heading_area .check_sorting {float:left;	padding:0 5px 0 20px;	height:32px; border:1px solid #ddd;}
+.statistics_table .section_heading_area .check_sorting input[type=checkbox] {margin-right:7px;}
+.statistics_table .section_heading_area .check_sorting label {margin-right:12px; color:#333;}
+
+.statistics_table .table_wrap {height:450px; overflow:auto;}
+.statistics_table .table_wrap .toggle_check {margin:0 10px;}
+
+.statistic_graph {margin-top:30px; margin-left:330px; height:300px;}
+
+/* statistics realtime */
+.statistics_setting .option .select_items .btn_orange{float:left; margin-top:9px; width:102px; min-width:0;}
+.statistics_setting .option .select_items .btn_orange:last-child{margin-left:8px;}
+
+/* statistics seperate */
+.statistics_setting .option .select_term select {width:100%;}
+.statistics_setting .option .set_term select {margin-left:7px; min-width:65px;}
+.statistics_setting .option .set_term hr {border:0;border-bottom:1px dotted #ddd;}
+.statistics_table .heading_function .config_number input {width:98px;}
 
