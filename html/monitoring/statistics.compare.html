@@ -93,29 +93,33 @@
 			</div>
 			
 			<div class="select_type">
-				<div class="title">
-					<input type="radio" name="type" id="vnf" /><label for="vnf">VNF 통계</label>
+				<div>
+					<div class="title">
+						<input type="radio" name="type" id="vnf" checked="checked" /><label for="vnf">VNF 통계</label>
+					</div>
+					<a href="#" class="btn">VNF 선택</a>
+					
+					<div class="title">
+						<input type="radio" name="type" id="host" /><label for="host">HOST 통계</label>
+					</div>
+					<select class="search">
+						<option>Host-#1</option>
+						<option>Host-#2</option>
+						<option>Host-#3</option>
+						<option>Host-#4</option>
+					</select>
 				</div>
-				<a href="#" class="btn">VNF 선택</a>
+					
+				<div>
+					<h2>통계 항목</h2>
+					<select class="search">
+						<option>MAJ_CPU</option>
+						<option>CRI_CPU</option>
+						<option>MAJ_MEM</option>
+					</select>
+				</div>
 				
-				<div class="title">
-					<input type="radio" name="type" id="host" /><label for="host">HOST 통계</label>
-				</div>
-				<select class="search">
-					<option>Host-#1</option>
-					<option>Host-#2</option>
-					<option>Host-#3</option>
-					<option>Host-#4</option>
-				</select>
-			</div>
-			
-			<div class="option">
-				<div class="select_items">
-					<h2 class="blind">통계 아이템 선택</h2>
-					<a href="#" class="btn btn_black">통계아이템 선택</a>
-				</div>
-				
-				<div class="select_term">
+				<div>
 					<h2>통계 주기</h2>
 					<select class="search">
 						<option>시간별 통계</option>
@@ -125,6 +129,9 @@
 						<option>년간 통계</option>
 					</select>
 				</div>
+			</div>
+			
+			<div class="option">
 				
 				<div class="set_term">
 					<h2>통계 기간 (년월일/시/분)</h2>
@@ -157,6 +164,7 @@
 							<option>02</option>
 						</select>
 					</div>
+					<a href="#" class="btn btn_orange">검색</a>
 				</div>
 			</div>
 		</section>
@@ -199,20 +207,20 @@
 				<table class="basic">
 					<thead>
 						<tr>
-							<th scope="col">통계 항목</th>
-							<th scope="col">그래프</th>
-							<th scope="col">Sum</th>
-							<th scope="col">Avg</th>
-							<th scope="col">Max</th>
-							<th scope="col">Min</th>
-							<th scope="col">23:01:00</th>
-							<th scope="col">23:01:10</th>
-							<th scope="col">23:01:20</th>
-							<th scope="col">23:01:30</th>
-							<th scope="col">23:01:40</th>
-							<th scope="col">23:01:50</th>
-							<th scope="col">23:02:00</th>
-							<th scope="col">23:02:10</th>
+							<th scope="col" class="emphasis">통계 항목</th>
+							<th scope="col" class="emphasis">그래프</th>
+							<th scope="col" class="emphasis">Sum</th>
+							<th scope="col" class="emphasis">Avg</th>
+							<th scope="col" class="emphasis">Max</th>
+							<th scope="col" class="emphasis">Min</th>
+							<th scope="col" class="emphasis">23:01:00</th>
+							<th scope="col" class="emphasis">23:01:10</th>
+							<th scope="col" class="emphasis">23:01:20</th>
+							<th scope="col" class="emphasis">23:01:30</th>
+							<th scope="col" class="emphasis">23:01:40</th>
+							<th scope="col" class="emphasis">23:01:50</th>
+							<th scope="col" class="emphasis">23:02:00</th>
+							<th scope="col" class="emphasis">23:02:10</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -384,14 +392,36 @@
 							<td>5/3</td>
 							<td>5/3</td>
 						</tr>
-						
+						<tr>
+							<td>NOR_CPU</td>
+							<td>
+								<div class="toggle_check">
+									<input type="checkbox" title="현재항목 그래프 보기" />
+									<div class="bg"></div>
+								</div>
+							</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+							<td>5/3</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 		</section>
 		
 		<section class="statistic_graph">
-			<img src="/images/temp/chart_line.jpg" alt=""/>
+			<div class="chart_wrap">
+				<img src="/images/temp/chart_line.jpg" alt=""/>
+			</div>
 		</section>
 		
 	</section>
