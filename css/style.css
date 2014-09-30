@@ -412,95 +412,26 @@ section.vnf { margin-top: 30px; }
 .login_wrap .login table.emphasis > tbody > tr > td { border-bottom: 8px solid #fff; }
 .login_wrap .login table.emphasis > tbody > tr > td a.btn { height: 76px; color: #ff743d; line-height: 76px; border: 2px solid #ff743d; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==============
  *  statistics layout 
  * ============== */
  
 /* statistics 공통 */
-.contents .statistics_setting {float:left; padding-left:20px;	padding-right:20px;	width:260px;}
-.statistics_setting .select_type {padding-top:20px;	border-top:1px solid #ddd;}
-.statistics_setting .select_type .title {margin-bottom:9px;}
+.contents .statistics_setting {position:relative; float:left; padding:30px 20px 0;	width:260px; height:919px;}
+
+.statistics_setting > div > div {margin-top:20px;}
+.statistics_setting > div > div h2 {margin-bottom:9px;font-size:14px;}
+.statistics_setting select {width:100%;}
+
+.statistics_setting .select_type {border-top:1px solid #ddd;}
+.statistics_setting .select_type .title {margin:20px 0 9px;}
+.statistics_setting .select_type .title:first-child {margin-top:0;}
 .statistics_setting .select_type .title input {vertical-align:middle;}
 .statistics_setting .select_type .title label {margin-left:9px; font-size:14px;	font-weight:800; vertical-align:middle;}
 .statistics_setting .select_type .treeview {margin-bottom:20px; height:400px;	border:1px solid #ddd;	overflow:auto;}
 .statistics_setting .select_type .search {width:100%;}
 
-.statistics_setting .option > div {margin-top:30px;}
-.statistics_setting .option > div h2 {margin-bottom:9px;font-size:14px;}
+.statistics_setting .option {position:absolute; bottom:20px; left:20px;}
 
 .statistics_table {margin-left:330px;}
 .statistics_table .section_heading_area {height:34px;}
@@ -508,18 +439,20 @@ section.vnf { margin-top: 30px; }
 .statistics_table .section_heading_area .check_sorting input[type=checkbox] {margin-right:7px;}
 .statistics_table .section_heading_area .check_sorting label {margin-right:12px; color:#333;}
 
-.statistics_table .table_wrap {height:450px; overflow:auto;}
+.statistics_table .table_wrap {height:470px; overflow:auto;}
 .statistics_table .table_wrap .toggle_check {margin:0 10px;}
+.statistics_table .emphasis {font-size:14px;}
 
-.statistic_graph {margin-top:30px; margin-left:330px; height:300px;}
+.statistic_graph {margin-top:30px; margin-left:330px;}
+.statistic_graph .chart_wrap {height:300px; overflow:auto;}
 
 /* statistics realtime */
 .statistics_setting .option .select_items .btn_orange{float:left; margin-top:9px; width:102px; min-width:0;}
 .statistics_setting .option .select_items .btn_orange:last-child{margin-left:8px;}
 
 /* statistics seperate */
-.statistics_setting .option .select_term select {width:100%;}
-.statistics_setting .option .set_term select {margin-left:7px; min-width:65px;}
-.statistics_setting .option .set_term hr {border:0;border-bottom:1px dotted #ddd;}
+.statistics_setting .option .set_term select {margin-left:7px; width:65px; min-width:65px;}
+.statistics_setting .option .set_term hr {margin:5px 0; border:0; border-bottom:1px dotted #ddd;}
+.statistics_setting .option .set_term .btn_orange {margin-top:10px;}
 .statistics_table .heading_function .config_number input {width:98px;}
 
