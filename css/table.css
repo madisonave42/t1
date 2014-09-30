@@ -42,7 +42,7 @@ table.emphasis > tbody > tr > td.email > span {float:left; width:6%; text-align:
 table.dbcol.left{width:49%; float:left;}
 table.dbcol.right{width:49%; float:right;}
 
-input[type=checkbox] { -webkit-appearance: none; margin: 8px 0; display: inline-block; height: 18px; width: 18px; vertical-align: middle; border: 1px solid #dcdcdc; background-image: url(none) }
+input[type=checkbox] { -webkit-appearance: none; margin: 8px 0; display: inline-block; height: 18px; width: 18px; vertical-align: middle; border: 1px solid #dcdcdc; background-image:none; }
 input[type=checkbox]:checked { background: url(/images/common/bg_checked.png) -1px -1px no-repeat; }
 
 table.emphasis a.btn { display: inline-block; min-width: 80px; width: auto; font-size: 13px; }

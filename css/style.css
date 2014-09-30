@@ -275,57 +275,33 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 
 /* tree node style 1 */
 
-/* tree node */
-.tree_view{/*width:220px;*/ padding:0 0 10px 30px;}
-.tree_view a{font-size:13px; color:#333; display:block;}
-.tree_view .step_3,
-.tree_view .step_4{padding-left:23px; padding-top:4px; background:url(/images/common/tree_line_2.png) repeat-y -64px 0px;}
-
-.tree_view .step_3.last,
-.tree_view .step_4.last{background:none;}
-
-.tree_view .step_2.fold,
-.tree_view .step_3.fold,
-.tree_view .step_4.fold{display:none;}
-
+/* tree item layout */
 .tree_view .tree_node:after{content:""; display:block; clear:both;}
-.tree_view .tree_node .tree_line{width:24px; height:28px;}
-.tree_view .tree_node .tree_line,
-.tree_view .tree_node .tree_item{float:left;}
 
-.tree_view .tree_node .tree_item{padding-top:11px;}
-.tree_view .tree_node .tree_item:after{content:""; display:block; clear:both;}
-.tree_view .tree_node .tree_item>div{float:left; width:150px; height:17px; line-height:17px; overflow:hidden;}
-.tree_view.step_1 .tree_node .tree_item .check_vm{display:none;}
+.tree_view .tree_node:first-child{}
+.tree_view .node_item{display:block; float:left; height:16px; line-height:17px; overflow:hidden; font-size:13px; color:#333; display:block;  margin-top:10px;}
 
-.tree_view .tree_node .tree_line{background:url(/images/common/tree_line_2.png) no-repeat -28px 0px;}
-.tree_view .tree_node.last .tree_line{background:url(/images/common/tree_line_2.png) no-repeat -3px 0px;}
+.tree_view .node_line{width:17px; padding:6px 0; margin-top:0; text-indent:-99999em; background:url(/images/common/tree_line.png) no-repeat 0 0;}
+.tree_view .node_icon{width:17px; text-indent:-99999em; background:url(/images/common/tree_icon.png) no-repeat 0 0; margin-right:5px;}
+.tree_view .node_icon.fold{background-position:0 0;}
+.tree_view .node_icon.unfold{background-position:0px -23px;}
+.tree_view .node_check{width:17px; margin:10px 3px 0 0; background:url(/images/common/tree_icon.png) no-repeat 0 -49px;}
+.tree_view .node_check.on{background-position:0 -73px;}
+.tree_view .node_check input[type=checkbox]{margin:0; opacity:0;}
+.tree_view .node_name{width:150px;}
+.tree_view .node_name:hover{text-decoration:underline;}
+.tree_view .node_name.unfold{color:#ff743d;}
+.tree_view .has_child + .fold{display:none;}
+.tree_view .has_child + .unfold{display:block;}
 
-/* tree icons */
-.tree_view.monitoring.step_1 .tree_node .tree_item .tree_bg{width:21px; background:url(/images/common/tree_icon_monitoring.png) no-repeat  0 0; margin-right:4px;}
-.tree_view.monitoring .step_2 .tree_node .tree_item .tree_bg{width:25px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -21px 0; margin-right:4px;}
-.tree_view.monitoring .step_3 .tree_node .tree_item .tree_bg{width:17px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -47px 0; margin-right:4px;}
-.tree_view.monitoring .step_4 .tree_node .tree_item .tree_bg{width:24px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -65px -37px; margin-right:4px;}
+/* tree line layout*/
+.tree_view .tree_node.first .node_line{background-position:-4px 16px;}
+.tree_view .tree_node       .node_line{background-position:-48px 0px;}
+.tree_view .tree_node.last  .node_line{background-position:-23px 0px;}
+.tree_view .tree_node.last + .inner_step{background:none;}
 
-.tree_view.monitoring.step_1 .tree_node .tree_item.fold .tree_bg{width:21px; background:url(/images/common/tree_icon_monitoring.png) no-repeat  0 -18px; margin-right:4px;}
-.tree_view.monitoring .step_2 .tree_node .tree_item.fold .tree_bg{width:25px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -21px -18px; margin-right:4px;}
-.tree_view.monitoring .step_3 .tree_node .tree_item.fold .tree_bg{width:17px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -47px -18px; margin-right:4px;}
-
-.tree_view.monitoring.step_1 .tree_node .tree_item.no_child.on .tree_bg{width:21px; background:url(/images/common/tree_icon_monitoring.png) no-repeat  0 -53px; margin-right:4px;}
-.tree_view.monitoring .step_2 .tree_node .tree_item.no_child.on .tree_bg{width:25px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -21px -53px; margin-right:4px;}
-.tree_view.monitoring .step_3 .tree_node .tree_item.no_child.on .tree_bg{width:17px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -47px -53px; margin-right:4px;}
-.tree_view.monitoring .step_4 .tree_node .tree_item.no_child.on .tree_bg{width:24px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -65px -54px; margin-right:4px;}
-
-.tree_view.monitoring.step_1 .tree_node .tree_item.no_child.on,
-.tree_view.monitoring .step_2 .tree_node .tree_item.no_child.on,
-.tree_view.monitoring .step_3 .tree_node .tree_item.no_child.on,
-.tree_view.monitoring .step_4 .tree_node .tree_item.no_child.on{color:/*#e8800f*/#5fbaff;}
-
-.tree_view.monitoring.step_1 .tree_node .tree_item.no_child .tree_bg{width:21px; background:url(/images/common/tree_icon_monitoring.png) no-repeat  0 -36px; margin-right:4px;}
-.tree_view.monitoring .step_2 .tree_node .tree_item.no_child .tree_bg{width:25px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -21px -36px; margin-right:4px;}
-.tree_view.monitoring .step_3 .tree_node .tree_item.no_child .tree_bg{width:17px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -47px -36px; margin-right:4px;}
-.tree_view.monitoring .step_4 .tree_node .tree_item.no_child .tree_bg{width:24px; background:url(/images/common/tree_icon_monitoring.png) no-repeat -65px -37px; margin-right:4px;}
-
+.tree_view .inner_step{padding-left:24px;}
+.tree_view .inner_step{background:url(/images/common/tree_line.png) repeat-y -84px 0;}
 
 /* ==============
  *  popup layout 

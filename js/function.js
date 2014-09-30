@@ -13,11 +13,13 @@ var treeView = (function(){
 		 */
 		init : function( $treeView ){
 			var $treeNode = $treeView.find('.tree_node');
-			// 하위노드 체크
+			// 하위노드 체크 - class name 부여
 			$treeNode.each(function(i){
 				var childNode = $(this).next().is('ul');
-				if( !childNode ){
-					$(this).find('.tree_item').addClass('no_child');
+				if( childNode ){
+					$(this).addClass('has_child');
+					$(this).find('.node_icon').addClass('fold');
+					$(this).next('ul').addClass('fold');
 				}
 			});
 		},
@@ -30,14 +32,17 @@ var treeView = (function(){
 			
 			event.preventDefault();
 			
-			if( $treeItem.data('fold') == 'false' ){
-				$treeItem.addClass('fold');
-				$treeItem.parents('.tree_node').next('ul').addClass('fold');
-				$treeItem.data('fold', 'true');
-			} else {
-				$treeItem.removeClass('fold');
-				$treeItem.parents('.tree_node').next('ul').removeClass('fold');
+			// unfold
+			if( $treeItem.data('fold') == 'true' ){
+				$treeItem.find('.node_icon').removeClass('fold').addClass('unfold');
+				$treeItem.find('.node_name').removeClass('fold').addClass('unfold');
+				$treeItem.next('ul').removeClass('fold').addClass('unfold');
 				$treeItem.data('fold', 'false');
+			} else {
+				$treeItem.find('.node_icon').addClass('fold').removeClass('unfold');
+				$treeItem.find('.node_name').addClass('fold').removeClass('unfold');
+				$treeItem.next('ul').addClass('fold').removeClass('unfold');
+				$treeItem.data('fold', 'true');
 			}
 		},
 		
@@ -45,18 +50,18 @@ var treeView = (function(){
 		 * 트리뷰 VM 선택여부
 		 * 
 		 */
-		selectVm : function( event, $treeItem ){
+		selectVm : function( event, $nodeCheck ){
 			
 			event.preventDefault();
 			
-			if( $treeItem.data('select') == 'false' ){
-				$treeItem.addClass('on');
-				$treeItem.find('input').prop('checked', true);
-				$treeItem.data('select', 'true');
+			if( $nodeCheck.data('select') == 'false' ){
+				$nodeCheck.addClass('on');
+				$nodeCheck.find('input').prop('checked', true);
+				$nodeCheck.data('select', 'true');
 			} else {
-				$treeItem.removeClass('on');
-				$treeItem.find('input').prop('checked', false);
-				$treeItem.data('select', 'false');
+				$nodeCheck.removeClass('on');
+				$nodeCheck.find('input').prop('checked', false);
+				$nodeCheck.data('select', 'false');
 			}
 		}
 

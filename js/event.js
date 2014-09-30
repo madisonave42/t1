@@ -58,28 +58,41 @@ $(function(){
 	(function(){
 		
 		// 트리뷰 DOM, Data 로딩 - 일반, ajax
+		
 		$(window).load(function(){
-			$('.tree_item').data('fold', 'false');
-			$('.tree_item').data('select', 'false');
-			treeView.init( $('.tree_view') );
+			if( $('ul').is('.tree_view') ){
+				$('.tree_node').data('fold', 'true');
+				$('.tree_node .node_check').data('select', 'false');
+				treeView.init( $('.tree_view') );
+			}
 		});
 		$(document).ajaxComplete(function(){
-			$('.tree_item').data('fold', 'false');
-			$('.tree_item').data('select', 'false');
-			treeView.init( $('.tree_view') );
+			if( $('ul').is('.tree_view') ){
+				$('.tree_node').data('fold', 'true');
+				$('.tree_node .node_check').data('select', 'false');
+				treeView.init( $('.tree_view') );
+			}
 		});
 		
-		$('body').on('click', '.tree_item', function( event ){
-			
-			if( $(this).is('.no_child') ){
-					treeView.selectVm( event, $(this) );
+		$('body').on('click', '.node_icon', function( event ){
+			if( $(this).parent('.tree_node').is('.has_child') ){
+				treeView.fold( event, $(this).parent('.tree_node') );
 			} else {
-				if( !$(this).parents().is('.step_4') ){
-					treeView.fold( event, $(this) );	
-				} else {
-					treeView.selectVm( event, $(this) );
-				}
+				event.preventDefault();
 			}
+		});
+		
+		$('body').on('click', '.node_name', function( event ){
+			if( $(this).parent('.tree_node').is('.has_child') ){
+				treeView.fold( event, $(this).parent('.tree_node') );
+			} else {
+				event.preventDefault();
+			}
+		});
+		
+		
+		$('body').on('click', '.node_check', function( event ){
+			treeView.selectVm( event, $(this) );
 		});
 		
 	})();
