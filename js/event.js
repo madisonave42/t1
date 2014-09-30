@@ -97,4 +97,23 @@ $(function(){
 		
 	})();
 	
+	/* tree view area init */
+	
+	(function(){
+		
+		var max = 0;
+				
+		if( $('ul').is( '.tree_view' ) ){
+			$('.node_name').each(function(i){
+				var currentNodeName = $(this).outerWidth();
+				if( max < currentNodeName ){
+					max = currentNodeName;
+				}
+			});
+			$('.tree_node').css({width : max + 60});
+		}
+		
+	})();
+	
+	
 });

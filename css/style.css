@@ -276,6 +276,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 /* tree node style 1 */
 
 /* tree item layout */
+.tree_view .tree_node{min-width:150px;}
 .tree_view .tree_node:after{content:""; display:block; clear:both;}
 
 .tree_view .tree_node:first-child{}
@@ -288,7 +289,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .tree_view .node_check{width:17px; margin:10px 3px 0 0; background:url(/images/common/tree_icon.png) no-repeat 0 -49px;}
 .tree_view .node_check.on{background-position:0 -73px;}
 .tree_view .node_check input[type=checkbox]{margin:0; opacity:0;}
-.tree_view .node_name{width:150px;}
+.tree_view .node_name{}
 .tree_view .node_name:hover{text-decoration:underline;}
 .tree_view .node_name.unfold{color:#ff743d;}
 .tree_view .has_child + .fold{display:none;}
@@ -404,7 +405,7 @@ section.vnf { margin-top: 30px; }
 .statistics_setting .select_type .title:first-child {margin-top:0;}
 .statistics_setting .select_type .title input {vertical-align:middle;}
 .statistics_setting .select_type .title label {margin-left:9px; font-size:14px;	font-weight:800; vertical-align:middle;}
-.statistics_setting .select_type .treeview {margin-bottom:20px; height:400px;	border:1px solid #ddd;	overflow:auto;}
+.statistics_setting .select_type .treeview_wrap {margin-bottom:20px; height:360px;	border:1px solid #ddd; overflow:auto; padding:0 10px;}
 .statistics_setting .select_type .search {width:100%;}
 
 .statistics_setting .option {position:absolute; bottom:20px; left:20px;}

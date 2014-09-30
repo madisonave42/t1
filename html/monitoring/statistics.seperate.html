@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="/css/table.css" />
 <script src="/js/lib/jquery-1.11.0.min.js"></script>
 <script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/js/function.js"></script>
 <script src="/js/event.js"></script>
 </head>
 <body>
@@ -97,8 +98,85 @@
 					<div class="title">
 						<input type="radio" name="type" id="vnf" checked="checked" /><label for="vnf">VNF 통계</label>
 					</div>
-					<div class="treeview">
-						tree view
+					<div class="treeview_wrap">
+						
+						<ul class="tree_view">
+							
+							<li>
+								<div class="tree_node first">
+									<div class="node_line node_item">inner step icon</div>
+									<a href="#" class="node_icon node_item">inner step icon</a>
+									<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+									<a href="#" class="node_name node_item">vPTT</a>
+								</div>
+							</li>
+							
+							<li>
+								<div class="tree_node">
+									<div class="node_line node_item">inner step icon</div>
+									<a href="#" class="node_icon node_item">inner step icon</a>
+									<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+									<a href="#" class="node_name node_item">vHD_Voice</a>
+								</div>
+								
+								<ul class="inner_step">
+									
+									<li>
+										<div class="tree_node">
+											<div class="node_line node_item">inner step icon</div>
+											<a href="#" class="node_icon node_item">inner step icon</a>
+											<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+											<a href="#" class="node_name node_item">vMSS_#11</a>
+										</div>
+								
+											<ul class="inner_step">
+												
+												<li>
+													<div class="tree_node">
+														<div class="node_line node_item">inner step icon</div>
+														<a href="#" class="node_icon node_item">inner step icon</a>
+														<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+														<a href="#" class="node_name node_item">vMSS_#11</a>
+													</div>
+												</li>
+												
+												<li>
+													<div class="tree_node last">
+														<div class="node_line node_item">inner step icon</div>
+														<a href="#" class="node_icon node_item">inner step icon</a>
+														<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+														<a href="#" class="node_name node_item">vMSS_#1111111111111111111111111111111111</a>
+													</div>
+												</li>
+												
+											</ul>
+								
+									</li>
+									
+									<li>
+										<div class="tree_node last">
+											<div class="node_line node_item">inner step icon</div>
+											<a href="#" class="node_icon node_item">inner step icon</a>
+											<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+											<a href="#" class="node_name node_item">vMSS_#11</a>
+										</div>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li>
+								<div class="tree_node last">
+									<div class="node_line node_item">inner step icon</div>
+									<a href="#" class="node_icon node_item">inner step icon</a>
+									<a href="#" class="node_check node_item"><input type="checkbox" /></a>
+									<a href="#" class="node_name node_item">vRCS</a>
+								</div>
+							</li>
+							
+						</ul>
+						
 					</div>
 					
 					<div class="title">
