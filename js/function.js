@@ -68,3 +68,29 @@ var treeView = (function(){
 	};
 	
 })();
+
+
+/**
+ * 문서 높이 체크
+ * @namespace 문서 높이 체크
+ * @constructor
+ */
+var checkDocHeight = (function(){
+	
+	return{
+		
+		/**
+		 * 높이 비교 후 클래스 수정
+		 * 
+		 */
+		toggleClass : function( win, doc, html ){
+			if( win.height() > doc.height() ) {
+				html.addClass( 'full_height' );
+			} else {
+				html.removeClass( 'full_height' );
+			}
+		}
+
+	};
+	
+})();
