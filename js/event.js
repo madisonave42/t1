@@ -115,5 +115,19 @@ $(function(){
 		
 	})();
 	
+	/* 페이지 높이체크 (lnb 높이 조절용) */
+	(function(){
+		var win = $( window );
+		var doc = $( 'body' );
+		var html = $( 'html' );
+	
+		$( window ).on( 'load', function(){
+			checkDocHeight.toggleClass( win, doc, html);
+		});
+		$( document ).ajaxComplete( function(){
+			checkDocHeight.toggleClass( win, doc, html);
+		});
+		
+	})();
 	
 });
