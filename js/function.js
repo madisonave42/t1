@@ -84,6 +84,9 @@ var checkDocHeight = (function(){
 		 * 
 		 */
 		toggleClass : function( win, doc, html ){
+			
+			html.removeClass('full_height');
+			
 			if( win.height() > doc.height() ) {
 				html.addClass( 'full_height' );
 			} else {
