@@ -19,13 +19,11 @@ table.emphasis > tbody > tr > td input[type=text],
 table.emphasis > tbody > tr > td input[type=password],
 table.emphasis > tbody > tr > td input[type=file] { box-sizing: border-box; padding-left: 10px; width: 100%; font-size: 13px; line-height: 32px; border: 1px solid #ddd; }
 table.emphasis > tbody > tr > td input[type=file]{line-height:0; padding:6px 0 7px 10px;}
-table.emphasis > tbody > tr > td input[type=text]:disabled,
-table.emphasis > tbody > tr > td input[type=text]:read-only,
-table.emphasis > tbody > tr > td input[type=file]:disabled,
-table.emphasis > tbody > tr > td input[type=file]:read-only { color: #7c7c7c; background-color: #ccc; }
+table.emphasis > tbody > tr > td input[readonly=readonly] {background-color:#eee;}
 table.emphasis > tbody > tr > td input.inline { width: auto; }
 
-table.emphasis > tbody > tr > td > p { overflow: hidden; }
+table.emphasis > tbody > tr > td > p {margin-top:3px; overflow: hidden; }
+table.emphasis > tbody > tr > td > p:first-child {margin-top:0;}
 table.emphasis > tbody > tr > td > p> input[type=text] { float: left;}
 
 table.emphasis > tbody > tr > td select {width:100%; height:34px; line-height:34px; border:1px solid #ddd;}
@@ -37,6 +35,8 @@ table.emphasis > tbody > tr > td.phone > span {float:left; width:5%; text-align:
 table.emphasis > tbody > tr > td.email select,
 table.emphasis > tbody > tr > td.email input {float:left; width:47%;}
 table.emphasis > tbody > tr > td.email > span {float:left; width:6%; text-align:center; line-height:32px;}
+
+table.search > tbody > tr > td input[type=file] {background-color:#eee;}
 
 .search_wrap{overflow:hidden;}
 table.dbcol.left{width:49%; float:left;}
