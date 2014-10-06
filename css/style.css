@@ -95,6 +95,7 @@ header .header_tab ul li a{
 header .header_tab ul li a.on{background-position:0 bottom; color:#fff;}
 
 header .signal{width:246px; height:42px; margin:20px 200px 0 0; background:#1f252d; float:left;}
+header .signal>a{display:block; float:left; height:42px; line-height:41px; text-align:center; color:#fff;}
 header .signal>div{height:42px; line-height:41px; float:left; text-align:center; color:#fff;}
 header .signal .warning{padding-left:22px; width:10px; background:url(/images/common/bg_warning.png) no-repeat 0 center; margin:0 25px;}
 header .signal .notice{padding-left:22px; width:10px; background:url(/images/common/bg_notice.png) no-repeat 0 center; margin:0 25px;;}
