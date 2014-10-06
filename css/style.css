@@ -131,16 +131,11 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.lnb > li:nth-child(4) > a { background-position: 0px -300px; }
 .nav nav ul.lnb > li:nth-child(5) > a { background-position: 0px -400px; }
 
-.nav nav ul.lnb > li:nth-child(1):hover > a,
-.nav nav ul.lnb > li:nth-child(1) > a:focus { background-position: -100px 0px; }
-.nav nav ul.lnb > li:nth-child(2):hover > a,
-.nav nav ul.lnb > li:nth-child(2) > a:focus { background-position: -100px -100px; }
-.nav nav ul.lnb > li:nth-child(3):hover > a,
-.nav nav ul.lnb > li:nth-child(3) > a:focus { background-position: -100px -200px; }
-.nav nav ul.lnb > li:nth-child(4):hover > a,
-.nav nav ul.lnb > li:nth-child(4) > a:focus { background-position: -100px -300px; }
-.nav nav ul.lnb > li:nth-child(5):hover > a,
-.nav nav ul.lnb > li:nth-child(5) > a:focus { background-position: -100px -400px; }
+.nav nav ul.lnb > li:nth-child(1):hover > a { background-position: -100px 0px; }
+.nav nav ul.lnb > li:nth-child(2):hover > a { background-position: -100px -100px; }
+.nav nav ul.lnb > li:nth-child(3):hover > a { background-position: -100px -200px; }
+.nav nav ul.lnb > li:nth-child(4):hover > a { background-position: -100px -300px; }
+.nav nav ul.lnb > li:nth-child(5):hover > a { background-position: -100px -400px; }
 
 .nav nav ul.lnb > li:nth-child(1) > a.on { background-position: -100px 0px; }
 .nav nav ul.lnb > li:nth-child(2) > a.on { background-position: -100px -100px; }
@@ -148,14 +143,12 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.lnb > li:nth-child(4) > a.on { background-position: -100px -300px; }
 .nav nav ul.lnb > li:nth-child(5) > a.on { background-position: -100px -400px; }
 
-.nav nav ul.lnb > li:hover ul.sub,
-.nav nav ul.lnb > li > a:focus + ul.sub { position: absolute; top: 1px; left: 100%; }
+.nav nav ul.lnb > li:hover ul.sub { position: absolute; top: 1px; left: 100%; }
 
 .nav nav ul.sub { position: absolute; top: -9999em; left: -9999em; width: 200px; }
 .nav nav ul.sub > li { background: #fff; }
 .nav nav ul.sub > li > a { margin-top: -1px; padding:11px 15px 11px 15px; display: block; color: #676a6c; border:1px solid #ddd; border-left:none; line-height:1.6; }
 .nav nav ul.sub > li > a:hover,
-.nav nav ul.sub > li > a:focus,
 .nav nav ul.sub > li > a.on { color: #ff743d; }
 
 .tab {margin-bottom:20px;}													
