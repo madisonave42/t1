@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	
 	// 편집 테이블 열 개수 계산 & 포커스 border
 	(function(){
@@ -121,7 +121,7 @@ $(function(){
 		var doc = $( 'body' );
 		var html = $( 'html' );
 	
-		$( window ).on( 'load', function(){
+		$( window ).on( 'load resize', function(){
 			checkDocHeight.toggleClass( win, doc, html);
 		});
 		$( document ).ajaxComplete( function(){
