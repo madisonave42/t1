@@ -11,11 +11,7 @@ table.basic tbody tr.focus{outline:3px solid #ff743d; border-left:5px solid #ff7
 table.emphasis { width: 100%; }
 table.emphasis > tbody > tr { }
 table.emphasis > tbody > tr > th {padding: 0 15px 0 15px; height: 34px; font-size: 13px; vertical-align: top; text-align: left; line-height: 34px; border-bottom: 8px solid #fcfcfd; background:#fceee9 url(../images/common/bg_label_line.gif) repeat-y; }
-/*table.emphasis.search > tbody > tr > th { border-left: 0px none; border-bottom: 0px none; background-color: transparent; }*/
-/*
-table.emphasis > tbody > tr > th > label { display: block; float:left; margin: 0; font-weight: bold; }
-table.emphasis > tbody > tr > th > .asterisk{display:block; float:left;}
-*/
+
 table.emphasis > tbody > tr > th > label {font-weight:700;}
 table.emphasis > tbody > tr > td {padding: 0 0 0 10px; height: 34px; font-size: 13px; vertical-align: top; border-bottom: 8px solid #fcfcfd; }
 table.emphasis > tbody > tr > td input[type=text],
