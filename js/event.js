@@ -39,7 +39,10 @@
 				dateFormat: 'yy/mm/dd',
 				showMonthAfterYear: true,
 				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				dayNamesMin: ['일','월','화','수','목','금','토']
+				monthNamesShort: ['01','02','03','04','05','06','07','08','09','10','11','12'],
+				dayNamesMin: ['일','월','화','수','목','금','토'],
+				changeMonth: true,
+				changeYear: true
 			});
 			calendarArea.find('.btn_start_cal').on('click',function(e) {
 				e.preventDefault();
