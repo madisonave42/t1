@@ -68,7 +68,7 @@ input,
 select {
 	margin:0;
 	padding:0 10px 0 10px;
-	font-family:'ubuntu', 'noto', sans-serif;
+	font-family:'ubuntu', 'Malgun Gothic', sans-serif;
 }
 select {
 	padding-right:0;
@@ -85,7 +85,7 @@ img{display:block;}
 
 /* custom font setting */
 html{overflow-y:scroll;}
-html, body{font-family:'ubuntu', 'noto', sans-serif; font-weight:400; font-size:62.5%; color:#676a6c; letter-spacing:-0.3px;}
+html, body{font-family:'ubuntu', 'Malgun Gothic', sans-serif; font-weight:400; font-size:62.5%; color:#676a6c; letter-spacing:-0.3px;}
 
 body div.wrap{font-size:13px; font-size:1.3rem; min-width:1400px; height:100%;}
 header{height:62px; background:#2d3541;	border-bottom:3px solid #ff743d; position:relative;}
@@ -152,10 +152,10 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.lnb > li:hover > a,
 .nav nav ul.lnb > li > a.on {position:relative; width:101px; z-index:10000; background-color:#fff;}
 
-.nav nav ul.sub { position: absolute; top: -9999em; left: -9999em; padding:0 24px; width:110px; z-index:9999; background: #fcfcfd; border:1px solid #e6e6e6; box-shadow:0 0 1px rgba(0,0,0,.15);}
+.nav nav ul.sub { position: absolute; top: -9999em; left: -9999em; padding:0 24px; width:120px; z-index:9999; background: #fcfcfd; border:1px solid #e6e6e6; box-shadow:0 0 1px rgba(0,0,0,.15);}
 .nav nav ul.sub > li {border-top:1px solid #ddd;}
 .nav nav ul.sub > li:first-child {border-top:0;}
-.nav nav ul.sub > li > a {display:block; color:#535a63; height:59px; line-height:59px; font-size:14px; text-align:center; font-weight:700;}
+.nav nav ul.sub > li > a {display:block; color:#535a63; height:59px; line-height:59px; font-size:14px; text-align:center; font-weight:800;}
 .nav nav ul.sub > li > a:hover,
 .nav nav ul.sub > li > a.on { color: #ff743d; }
 
@@ -221,7 +221,7 @@ section.contents section{border-top:0px solid #e6e6e6; }
 
 /* checked - color */
 .search_checkbox { padding: 0 10px; height: 32px; border: 1px solid #ddd; }
-.search_checkbox label { padding:0 10px 0 5px; font-size: 12px; font-weight: bold; vertical-align: middle; }
+.search_checkbox label { padding:0 10px 0 5px; font-size: 12px; font-weight:800; vertical-align: middle; }
 .search_checkbox label.cri,
 .search_checkbox label.error { color: #e9300b; }
 .search_checkbox label.maj { color: #fe711e; }
@@ -254,14 +254,14 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .paging>a.last:before {content:'\00BB';}
 
 /* calendar */
-.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;}
+.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,'Malgun Gothic', Arial,sans-serif;}
 .ui-widget-content{border:1px solid #ddd;background:#eee;color:#333}
 .ui-widget-content a{color:#333}
-.ui-widget-header{border:1px solid #e78f08;background-color:#ff743d; color:#fff;font-weight:bold}
+.ui-widget-header{border:1px solid #e78f08;background-color:#ff743d; color:#fff;font-weight:800}
 .ui-widget-header a{color:#fff}
-.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #ccc;background:#f6f6f6;font-weight:bold;color:#676A6C;}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #ccc;background:#f6f6f6;font-weight:800;color:#676A6C;}
 .ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#676A6C;text-decoration:none}
-.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #fbcb09;font-weight:bold;color:#333}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #fbcb09;font-weight:800;color:#333}
 .ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited{color:#c77405;text-decoration:none}
 .ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #fed22f;background:#ffe45c;color:#333}
 .ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#363636}
@@ -277,10 +277,10 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .ui-datepicker .ui-datepicker-next span:after{content:'';display:block; position:absolute; top:5px; left:5px; border-left:4px solid #fff; border-top:4px solid transparent; border-bottom:4px solid transparent;}
 .ui-datepicker .ui-datepicker-title{position:relative; top:1px; margin:0 2.3em;line-height:1.8em;text-align:center}
 .ui-datepicker .ui-datepicker-title select{font-size:1em;margin:1px 0}
-.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{margin:0 3px; border:0; font-weight: bold; background-color:transparent; color:#fff;}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{margin:0 3px; border:0; font-weight:800; background-color:transparent; color:#fff;}
 .ui-datepicker select.ui-datepicker-month option, .ui-datepicker select.ui-datepicker-year option {background-color:#fff; color:#666;}
 .ui-datepicker table{width:100%;font-size:.9em;border-collapse:collapse;margin:0 0 .4em}
-.ui-datepicker th{padding:.7em .3em;text-align:center;font-weight:bold;border:0}
+.ui-datepicker th{padding:.7em .3em;text-align:center;font-weight:800;border:0}
 .ui-datepicker td{border:0;padding:1px}
 .ui-datepicker td span,.ui-datepicker td a{display:block;padding:.2em;text-align:right;text-decoration:none}
 /* toggle_check */
