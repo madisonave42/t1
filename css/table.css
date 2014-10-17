@@ -17,7 +17,7 @@ table.emphasis > tbody > tr > td {padding: 0 0 0 10px; height: 34px; font-size: 
 table.emphasis > tbody > tr > td input[type=text],
 table.emphasis > tbody > tr > td input[type=password],
 table.emphasis > tbody > tr > td input[type=file] { box-sizing: border-box; padding-left: 10px; width: 100%; font-size: 13px; line-height: 32px; border: 1px solid #ddd; height:34px;}
-table.emphasis > tbody > tr > td input[type=file]{line-height:0; padding:6px 0 7px 10px;}
+table.emphasis > tbody > tr > td input[type=file]{line-height:23px; padding:6px 0 5px 10px; height:37px;}
 table.emphasis > tbody > tr > td input[readonly=readonly] {background-color:#eee;}
 table.emphasis > tbody > tr > td input.inline { width: auto; }
 
