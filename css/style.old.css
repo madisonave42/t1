@@ -67,7 +67,7 @@ a {
 input,
 select {
 	margin:0;
-	padding:0;
+	padding:0 10px 0 10px;
 	font-family:'ubuntu', 'Malgun Gothic', sans-serif;
 }
 select {
@@ -202,10 +202,8 @@ section.contents section{border-top:0px solid #e6e6e6; }
 /*===== component =====*/
 
 /* buttons */
-/*.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #242424; color:#242424; text-align:center; line-height:30px;}*/
-.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #777777; background-color:#888888; color:#fffff2; text-align:center; line-height:30px;}
-/*.btn_orange{border:1px solid #ff743d; color:#ff743d;}*/
-.btn_orange {border:1px solid #d76500; background-color:#ff743d; color:#fffff2}
+.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #242424; color:#242424; text-align:center; line-height:30px;}
+.btn_orange{border:1px solid #ff743d; color:#ff743d;}
 .btn_refresh {float:left; width:32px; height:32px; text-indent:-9999em; background:url(../images/common/btn_refresh.png) no-repeat 50% 50%;}
 
 /* search box */
@@ -215,7 +213,7 @@ section.contents section{border-top:0px solid #e6e6e6; }
 
 /* search date */
 .search_date {line-height: 32px;}
-.search_date input[type=text] {padding:0 0 0 10px; margin-right:4px; width:80px; height:32px; /*line-height:32px;*/ border:1px solid #ddd;}
+.search_date input[type=text] {margin-right:4px; width:80px; height:32px; /*line-height:32px;*/ border:1px solid #ddd;}
 .search_date img { display: inline-block; vertical-align: middle; }
 
 .heading_function .search_date {margin: 0 20px; padding: 0 20px; border-right: 1px solid #ddd; border-left: 1px solid #ddd;}
@@ -292,7 +290,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .toggle_check input:checked + .bg {background-position:-20px 0}
 
 /*===== Catalogue =====*/
-.flavour_id>div {float:left; margin:0 5px; width:150px; height:25px; line-height:25px; border:1px solid #242424; text-align:center; cursor: pointer;}
+.flavour_id>div {float:left; margin:0 5px; width:150px; height:25px; line-height:25px; border:1px solid #242424; text-align:center;}
 .flavour_id>div.on {border:1px solid #FF743D; color:#ff743d;}
 
 .gauge_list {padding:10px 0; text-align:center;}
@@ -351,7 +349,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
  *  statistics layout 
  * ============== */
  
-/* statistics ???? */
+/* statistics ���� */
 .contents .statistics_setting {position:relative; float:left; padding:30px 20px 0;	width:260px; height:829px;}
 
 .statistics_setting > div > div {margin-top:20px;}
@@ -462,7 +460,7 @@ body { height: 100%; }
 .input_wrap input {margin-right:7px!important;}
 .input_wrap label {margin-right:12px; color:#333; vertical-align:middle;}
 
-/* user ???? */
+/* user */
 #user_info .popup_section_heading {left:0; padding-right:2px;}
 #additional_info .popup_section_heading {left:50%;}
 
