@@ -206,6 +206,7 @@ section.contents section{border-top:0px solid #e6e6e6; }
 .btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #777777; background-color:#888888; color:#fffff2; text-align:center; line-height:30px;}
 /*.btn_orange{border:1px solid #ff743d; color:#ff743d;}*/
 .btn_orange {border:1px solid #d76500; background-color:#ff743d; color:#fffff2}
+.btn_pop {display:block; height:20px; text-align:center; line-height:20px;} /* skkim add */
 .btn_refresh {float:left; width:32px; height:32px; text-indent:-9999em; background:url(../images/common/btn_refresh.png) no-repeat 50% 50%;}
 
 /* search box */
@@ -344,7 +345,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .login_wrap .login table.emphasis { margin-top: 35px; display: block; }
 .login_wrap .login table.emphasis > tbody > tr > th,
 .login_wrap .login table.emphasis > tbody > tr > td { border-bottom: 8px solid #fff; }
-.login_wrap .login table.emphasis > tbody > tr > td a.btn { height: 76px; color: #ff743d; line-height: 76px; border: 2px solid #ff743d; }
+.login_wrap .login table.emphasis > tbody > tr > td a.btn { height: 76px; color:#fffff2; background-color: #ff743d; line-height: 76px; border: 2px solid #d76500; }
 
 
 /* ==============

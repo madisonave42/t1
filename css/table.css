@@ -35,8 +35,6 @@ table.emphasis > tbody > tr > td.email select,
 table.emphasis > tbody > tr > td.email input {float:left; width:47%;}
 table.emphasis > tbody > tr > td.email > span {float:left; width:6%; text-align:center; line-height:32px;}
 
-table.search > tbody > tr > td input[type=file] {background-color:#eee;}
-
 .search_wrap{overflow:hidden;}
 table.dbcol.left{width:49%; float:left;}
 table.dbcol.right{width:49%; float:right;}
