@@ -286,6 +286,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .ui-datepicker th{padding:.7em .3em;text-align:center;font-weight:800;border:0}
 .ui-datepicker td{border:0;padding:1px}
 .ui-datepicker td span,.ui-datepicker td a{display:block;padding:.2em;text-align:right;text-decoration:none}
+
 /* toggle_check */
 .toggle_check {position:relative; width:20px; height:20px;}
 .toggle_check input[type=checkbox] {position:absolute; top:0; left:0; margin:0; width:20px; height:20px; opacity:0;}

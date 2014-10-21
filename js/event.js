@@ -33,26 +33,71 @@
 		if( $('div').is('.search_date') ){
 			
 			var calendarArea = $('.search_date');
+			var chkDateRange = $('.search_date').find('input[type=checkbox]');
 			
-			calendarArea.find('input').datepicker({
-				duration: 'fast',
-				dateFormat: 'yy/mm/dd',
-				showMonthAfterYear: true,
-				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				monthNamesShort: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				dayNamesMin: ['일','월','화','수','목','금','토'],
-				changeMonth: true,
-				changeYear: true
+			var chkYear;
+			var chkMonth;
+			var chkDay;
+			
+			chkDateRange.on('change', function(){
+				
+				chkYear = $('.chk_year').is(':checked');
+				chkMonth = $('.chk_month').is(':checked');
+				chkDay = $('.chk_day').is(':checked');
+				
+				if( chkYear ){
+					
+					datePick.onlyYear(calendarArea);
+					
+					if(chkYear && !chkMonth && chkDay){
+					
+						alert('월을 먼저 선택해주세요.');
+						$('input[type=checkbox]').prop('checked', false);
+					
+					} else if( chkYear && chkMonth ) {
+						
+						datePick.yearMonth(calendarArea);
+						
+						if( chkYear && chkMonth && chkDay ){
+							
+							datePick.fullDate(calendarArea);
+						
+						}
+						
+					}
+					
+				} else if( !chkYear && !chkMonth && !chkDay ){
+					calendarArea.find('input[type=text]').val('');
+				} else {
+					alert('연도를 먼저 선택해주세요.');
+					$('input[type=checkbox]').prop('checked', false);
+				}
+
 			});
+			
+			calendarArea.find('.start_cal').on('click',function(e) {
+				e.preventDefault();
+				calendarArea.find('.start_cal').datepicker('show');
+				
+			});
+			
 			calendarArea.find('.btn_start_cal').on('click',function(e) {
 				e.preventDefault();
 				calendarArea.find('.start_cal').datepicker('show');
 			});
+			
+			calendarArea.find('.end_cal').on('click',function(e) {
+				e.preventDefault();
+				calendarArea.find('.end_cal').datepicker('show');
+			});
+			
 			calendarArea.find('.btn_end_cal').on('click',function(e) {
 				e.preventDefault();
 				calendarArea.find('.end_cal').datepicker('show');
 			});
+		
 		}
+		
 		
 	})();
 	
