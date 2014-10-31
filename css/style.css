@@ -129,23 +129,73 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.lnb.topology > li > a { background:url(/images/common/lnb_monitoring.png) no-repeat; }
 .nav nav ul.lnb.new_vnf > li > a { background:url(/images/common/lnb_new_vnf.png) no-repeat; }
 .nav nav ul.lnb.scale_vnf > li > a { background:url(/images/common/lnb_scale_vnf.png) no-repeat; }
-.nav nav ul.lnb > li:nth-child(1) > a { background-position: 0px 0px; }
-.nav nav ul.lnb > li:nth-child(2) > a { background-position: 0px -100px; }
-.nav nav ul.lnb > li:nth-child(3) > a { background-position: 0px -200px; }
-.nav nav ul.lnb > li:nth-child(4) > a { background-position: 0px -300px; }
-.nav nav ul.lnb > li:nth-child(5) > a { background-position: 0px -400px; }
 
-.nav nav ul.lnb > li:nth-child(1):hover > a { background-position: -100px 0px; }
-.nav nav ul.lnb > li:nth-child(2):hover > a { background-position: -100px -100px; }
-.nav nav ul.lnb > li:nth-child(3):hover > a { background-position: -100px -200px; }
-.nav nav ul.lnb > li:nth-child(4):hover > a { background-position: -100px -300px; }
-.nav nav ul.lnb > li:nth-child(5):hover > a { background-position: -100px -400px; }
+/*==================== 
+ * left menu style 
+ =====================*/
 
-.nav nav ul.lnb > li:nth-child(1) > a.on { background-position: -100px 0px; }
-.nav nav ul.lnb > li:nth-child(2) > a.on { background-position: -100px -100px; }
-.nav nav ul.lnb > li:nth-child(3) > a.on { background-position: -100px -200px; }
-.nav nav ul.lnb > li:nth-child(4) > a.on { background-position: -100px -300px; }
-.nav nav ul.lnb > li:nth-child(5) > a.on { background-position: -100px -400px; }
+/* monitoring */
+.nav nav ul.lnb > li.topology > a         { background-position: 0px 0px; }
+.nav nav ul.lnb > li.statistics > a       { background-position: 0px -100px; }
+.nav nav ul.lnb > li.alarm > a            { background-position: 0px -200px; }
+.nav nav ul.lnb > li.task > a             { background-position: 0px -300px; }
+
+.nav nav ul.lnb > li.topology:hover > a   { background-position: -100px 0px; }
+.nav nav ul.lnb > li.statistics:hover > a { background-position: -100px -100px; }
+.nav nav ul.lnb > li.alarm:hover > a      { background-position: -100px -200px; }
+.nav nav ul.lnb > li.task:hover > a       { background-position: -100px -300px; }
+
+.nav nav ul.lnb > li.topology > a.on      { background-position: -100px 0px; }
+.nav nav ul.lnb > li.statistics > a.on    { background-position: -100px -100px; }
+.nav nav ul.lnb > li.alarm > a.on         { background-position: -100px -200px; }
+.nav nav ul.lnb > li.task > a.on          { background-position: -100px -300px; }
+
+/* catalogue */
+.nav nav ul.lnb > li.vnf > a              { background-position: 0px 0px; }
+.nav nav ul.lnb > li.host > a             { background-position: 0px -100px; }
+.nav nav ul.lnb > li.network > a          { background-position: 0px -200px; }
+
+.nav nav ul.lnb > li.vnf:hover > a        { background-position: -100px 0px; }
+.nav nav ul.lnb > li.host:hover > a       { background-position: -100px -100px; }
+.nav nav ul.lnb > li.network:hover > a    { background-position: -100px -200px; }
+
+.nav nav ul.lnb > li.vnf > a.on           { background-position: -100px 0px; }
+.nav nav ul.lnb > li.host > a.on          { background-position: -100px -100px; }
+.nav nav ul.lnb > li.network > a.on       { background-position: -100px -200px; }
+
+/* new vnf */
+.nav nav ul.lnb > li.vnf_sel > a          { background-position: 0px 0px; }
+.nav nav ul.lnb > li.conf_param > a       { background-position: 0px -100px; }
+.nav nav ul.lnb > li.vl_map > a           { background-position: 0px -200px; }
+.nav nav ul.lnb > li.host_sel > a         { background-position: 0px -300px; }
+.nav nav ul.lnb > li.ip_assign > a        { background-position: 0px -400px; }
+
+.nav nav ul.lnb > li.vnf_sel:hover > a    { background-position: -100px 0px; }
+.nav nav ul.lnb > li.conf_param:hover > a { background-position: -100px -100px; }
+.nav nav ul.lnb > li.vl_map:hover > a     { background-position: -100px -200px; }
+.nav nav ul.lnb > li.host_sel:hover > a   { background-position: -100px -300px; }
+.nav nav ul.lnb > li.ip_assign:hover > a  { background-position: -100px -400px; }
+
+.nav nav ul.lnb > li.vnf_sel > a.on       { background-position: -100px 0px; }
+.nav nav ul.lnb > li.conf_param > a.on    { background-position: -100px -100px; }
+.nav nav ul.lnb > li.vl_map > a.on        { background-position: -100px -200px; }
+.nav nav ul.lnb > li.host_sel > a.on      { background-position: -100px -300px; }
+.nav nav ul.lnb > li.ip_assign > a.on     { background-position: -100px -400px; }
+
+/* scale vnf */
+.nav nav ul.lnb > li.scale_flavor > a { background-position: 0px 0px; }
+.nav nav ul.lnb > li.scale_host > a { background-position: 0px -100px; }
+.nav nav ul.lnb > li.scale_ip > a { background-position: 0px -200px; }
+
+.nav nav ul.lnb > li.scale_flavor:hover > a { background-position: -100px 0px; }
+.nav nav ul.lnb > li.scale_host:hover > a { background-position: -100px -100px; }
+.nav nav ul.lnb > li.scale_ip:hover > a { background-position: -100px -200px; }
+
+.nav nav ul.lnb > li.scale_flavor > a.on { background-position: -100px 0px; }
+.nav nav ul.lnb > li.scale_host > a.on { background-position: -100px -100px; }
+.nav nav ul.lnb > li.scale_ip > a.on { background-position: -100px -200px; }
+
+/* ================== */
 
 .nav nav ul.lnb > li:hover ul.sub { position: absolute; top:0; left: 100%; }
 
@@ -191,7 +241,7 @@ header .login .user>p:last-child{color:#999;}
 
 /*===== page layout =====*/
 .page_heading_area{border-bottom:2px solid #242424; padding-bottom:5px; margin-bottom:20px;}
-.page_heading{font-size:20px; font-weight:400; float:left; height:34px; line-height:34px; color:#333;}
+.page_heading{font-size:20px; font-weight:700; float:left; height:34px; line-height:34px; color:#333;}
 .heading_function{float:right;}
 .heading_function>*{float:left; margin-left:10px;}
 .heading_function>.btn{min-width:50px;}
@@ -203,7 +253,7 @@ section.contents section{border-top:0px solid #e6e6e6; }
 
 /* buttons */
 /*.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #242424; color:#242424; text-align:center; line-height:30px;}*/
-.btn{display:block; min-width:116px; padding:0 10px; height:30px; border:1px solid #777777; background-color:#888888; color:#fffff2; text-align:center; line-height:30px;}
+.btn{display:block; padding:0 10px; height:30px; border:1px solid #777777; background-color:#888888; color:#fffff2; text-align:center; line-height:30px;}
 /*.btn_orange{border:1px solid #ff743d; color:#ff743d;}*/
 .btn_orange {border:1px solid #d76500; background-color:#ff743d; color:#fffff2}
 .btn_pop {display:block; height:20px; text-align:center; line-height:20px;} /* skkim add */
@@ -428,7 +478,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 /* default layout */
 html.full_height {height:100%;}
 body { height: 100%; }
-.popup_wrap {height:100%; box-sizing:border-box; border-top:2px solid #242424; /*background:#fcfcfd;*/ font-size:1.3rem;}
+.popup_wrap {height:100%; box-sizing:border-box; border-top:2px solid #242424; background:#fcfcfd; font-size:1.3rem;}
 .popup_contents {padding:25px 40px 30px; }
 .popup_container {position:relative; height:100%;}
 .popup_container.nav .popup_contents {padding-left:130px;}
@@ -438,7 +488,7 @@ body { height: 100%; }
 .popup_contents .confirm_btns {margin-top:30px; text-align:center;}
 .popup_contents .confirm_btns .btn {margin:0 4px; display:inline-block; width:136px;}
 
-.popup_container.nav nav{box-sizing:border-box; width:100px; height:100%; position:absolute; left:0; top:0; /*background:#242424;*/}
+.popup_container.nav nav{box-sizing:border-box; width:100px; height:100%; position:absolute; left:0; top:0; background:#242424;}
 
 /* tab section layout */
 .popup_tab_area {position:relative;}
@@ -483,4 +533,15 @@ section.vnf { margin-top: 30px; }
 .modal_pop_win .modal_pop_content {padding:20px; min-height:194px; font-size:15px; line-height:1.6;}
 .modal_pop_win .modal_pop_bottom {padding-top:10px; padding-right:30px; height:44px; background:#fcfcfc;}
 .modal_pop_win .modal_pop_bottom .btn {float:right; margin-left:5px; min-width:80px;}
+
+
+
+/* search date2 spinner */
+ .spinner {line-height: 32px; margin-bottom:10px;}
+.spinner .search1 {min-width: 38px!important;  height: 34px; border: 1px solid #ddd; width:38px;}
+.spinnerDiv {position:relative; float:left;}
+.spinnerDiv > input[type=text] {/*line-height:32px;*/ border:1px solid #ddd; height:32px; text-align: left; width: 56px;}
+.spinnerDiv > button {position:absolute; right:2px; width:20px; height:13px; background:none; border:0; font-size:10px;}
+.spinnerDiv .btn_up {top:2px;}
+.spinnerDiv .btn_down {bottom:2px;}
 
