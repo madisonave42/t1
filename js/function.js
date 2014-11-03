@@ -251,12 +251,13 @@ var topology = (function(){
 			
 			if (tabItems.length % 4 > 0) {
 				pageNum += 1;
+				console.log(pageNum);
 			}
 			if (pageNum > 1) {
 			
-				btnPrev.addClass('disable');
+				//btnPrev.addClass('disable');
 			
-				tabItems.css({width: itemWidth})
+				tabItems.css({width: itemWidth});
 				tabList.css({width: pageWidth * pageNum});
 				
 				pageNum--; // 0부터 시작하는 인덱스로 사용하기위해 1을 뺌
