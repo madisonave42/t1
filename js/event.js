@@ -51,47 +51,8 @@
 		if( $('div').is('.search_date') ){
 			
 			var calendarArea = $('.search_date');
-			var chkDateRange = $('.search_date').find('input[type=checkbox]');
 			
-			var chkYear;
-			var chkMonth;
-			var chkDay;
-			
-			chkDateRange.on('change', function(){
-				
-				chkYear = $('.chk_year').is(':checked');
-				chkMonth = $('.chk_month').is(':checked');
-				chkDay = $('.chk_day').is(':checked');
-				
-				if( chkYear ){
-					
-					datePick.onlyYear(calendarArea);
-					
-					if(chkYear && !chkMonth && chkDay){
-					
-						alert('월을 먼저 선택해주세요.');
-						$('input[type=checkbox]').prop('checked', false);
-					
-					} else if( chkYear && chkMonth ) {
-						
-						datePick.yearMonth(calendarArea);
-						
-						if( chkYear && chkMonth && chkDay ){
-							
-							datePick.fullDate(calendarArea);
-						
-						}
-						
-					}
-					
-				} else if( !chkYear && !chkMonth && !chkDay ){
-					calendarArea.find('input[type=text]').val('');
-				} else {
-					alert('연도를 먼저 선택해주세요.');
-					$('input[type=checkbox]').prop('checked', false);
-				}
-
-			});
+			datePick.initCal(calendarArea);
 			
 			calendarArea.find('.start_cal').on('click',function(e) {
 				e.preventDefault();
@@ -115,7 +76,6 @@
 			});
 		
 		}
-		
 		
 	})();
 	

@@ -99,17 +99,15 @@ var checkDocHeight = (function(){
 })();
 
 /**
- * date picker year/month/day
+ * date picker
  * @namespace date picker
  */
 
 var datePick = (function(){
 	
-	var id=0;
-
 	return{
 		
-		onlyYear : function( calendarArea ){
+		initCal : function( calendarArea ){
 			
 			calendarArea.find('input[type=text]').datepicker('destroy');
 			calendarArea.find('input[type=text]').val('');
@@ -123,95 +121,9 @@ var datePick = (function(){
 				dayNamesMin: ['일','월','화','수','목','금','토'],
 				changeMonth: true,
 				changeYear: true,
-				showButtonPanel:true,
-				
-        onClose: function(dateText, inst) {
-          var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-          
-          var className = $(this).attr('class');
-          
-          if( className.indexOf('start') >= 0 ){
-          	$(this).datepicker('setDate', new Date(year, 0, 1));
-          } else {
-          	$(this).datepicker('setDate', new Date(year, 11, 31));
-          }
-        }
-        
+				showButtonPanel:true
 			});
 			
-		},
-		yearMonth : function( calendarArea ){
-			
-			calendarArea.find('input[type=text]').datepicker('destroy');
-			calendarArea.find('input[type=text]').val('');
-			
-			calendarArea.find('input[type=text]').datepicker({
-				duration: 'fast',
-				dateFormat: 'yy/mm/dd',
-				showMonthAfterYear: true,
-				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				monthNamesShort: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				dayNamesMin: ['일','월','화','수','목','금','토'],
-				changeMonth: true,
-				changeYear: true,
-				showButtonPanel:true,
-				
-        onClose: function(dateText, inst) {
-          var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-          var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-          
-          var className = $(this).attr('class');
-          
-          if( className.indexOf('start') >= 0 ){
-          	$(this).datepicker('setDate', new Date(year, month, 1));
-          } else {
-          	var lastDay = datePick.calcLastDay( year, month );
-          	$(this).datepicker('setDate', new Date(year, month, lastDay));
-          }
-        }
-			});
-			
-		},
-		fullDate : function( calendarArea ){
-			
-			calendarArea.find('input[type=text]').datepicker('destroy');
-			calendarArea.find('input[type=text]').val('');
-			
-			calendarArea.find('input[type=text]').datepicker({
-				duration: 'fast',
-				dateFormat: 'yy/mm/dd',
-				showMonthAfterYear: true,
-				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				monthNamesShort: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				dayNamesMin: ['일','월','화','수','목','금','토'],
-				changeMonth: true,
-				changeYear: true,
-			});
-			
-		},
-		calcLastDay : function(year, month){
-			var lastDay;
-			
-			if( month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11 ){
-				
-				lastDay = 31;
-				
-			} else if(month == 1){
-				
-				if( (year%4 == 0) && (year%100 != 0 ) || (year%400 == 0) ){
-					lastDay = 29;
-				} else {
-					lastDay = 28;
-				}
-				
-			} else {
-				
-				lastDay = 30;
-				
-			}
-			
-			
-			return lastDay;
 		}
 		
 	};
@@ -240,9 +152,9 @@ var topology = (function(){
 			var btnNext = el.find('.next');
 			var pageNum = 0;
 			var currentPage = 0;
-			var itemWidth = tabItems.eq(0).width();
+			var itemWidth = tabItems.eq(0).innerWidth();
 			var pageWidth = itemWidth * 4;
-			
+
 			// ajax 완료시마다 실행되기때문에 중복방지를 위한 초기화
 			btnPrev.off();
 			btnNext.off();
@@ -251,11 +163,9 @@ var topology = (function(){
 			
 			if (tabItems.length % 4 > 0) {
 				pageNum += 1;
-				console.log(pageNum);
 			}
+
 			if (pageNum > 1) {
-			
-				//btnPrev.addClass('disable');
 			
 				tabItems.css({width: itemWidth});
 				tabList.css({width: pageWidth * pageNum});

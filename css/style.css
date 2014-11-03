@@ -221,19 +221,20 @@ header .login .user>p:last-child{color:#999;}
 .topology_tab .tab_1 { width: 25%; }
 .topology_tab .tab_2 { width: 25%; }
 
-.scrollable_tab {position:relative; padding:0 20px;}
+.scrollable_tab {position:relative; padding:0 23px 0 21px;}
 .scrollable_tab .scrollable_tab_container {margin-top:-20px; overflow:hidden;}
 .scrollable_tab .scrollable_tab_container .tab {margin:0;}
+.scrollable_tab .scrollable_tab_container .tab li:first-child{padding-left:2px;}
 .scrollable_tab .prev,
-.scrollable_tab .next {position:absolute; top:11px; width:0; height:0; border:7px solid #c1c1c1; border-top-color:transparent; border-bottom-color:transparent; text-indent:-9999px;}
-.scrollable_tab .prev {left:2px; border-left:none;}
-.scrollable_tab .next {right:2px; border-right:none;}
-.scrollable_tab .prev:hover {border-right-color:#535a63;}
-.scrollable_tab .next:hover {border-left-color:#535a63;}
+.scrollable_tab .next {position:absolute; top:0; width:20px; height:35px; text-indent:-9999px; background:#bbb url(/images/common/btn_tab_arrow.png) no-repeat}
+.scrollable_tab .prev {left:0;}
+.scrollable_tab .next {right:0; background-position:-20px 0;}
+.scrollable_tab .prev:hover {background-color:#2c3640;}
+.scrollable_tab .next:hover {background-color:#2c3640;}
 .scrollable_tab .prev.disable,
-.scrollable_tab .prev.disable:hover {border-right-color:#ddd; cursor:default;}
+.scrollable_tab .prev.disable:hover,
 .scrollable_tab .next.disable,
-.scrollable_tab .next.disable:hover {border-left-color:#ddd; cursor:default;}
+.scrollable_tab .next.disable:hover {background-color:#dfdfdf; cursor:default;}
 .scrollable_tab ul li {width:25%;}
 /* =================
  *  page each style
