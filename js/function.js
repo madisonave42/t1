@@ -225,3 +225,232 @@ var datePick = (function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 스크롤 탭
+ * @namespace 
+ * @constructor
+ */
+var topology = (function(){
+	
+	return{
+		
+		/**
+		 * 토플로지 페이지 스크롤 탭
+		 * 
+		 */
+		initScrollTab : function(el){
+			var tabList = el.find('ul');
+			var tabItems = el.find('li');
+			var btnPrev = el.find('.prev');
+			var btnNext = el.find('.next');
+			var pageNum = 0;
+			var currentPage = 0;
+			var itemWidth = tabItems.eq(0).width();
+			var pageWidth = itemWidth * 4;
+			
+			// ajax 완료시마다 실행되기때문에 중복방지를 위한 초기화
+			btnPrev.off();
+			btnNext.off();
+			
+			pageNum = Math.floor(tabItems.length / 4);
+			
+			if (tabItems.length % 4 > 0) {
+				pageNum += 1;
+			}
+			if (pageNum > 1) {
+			
+				btnPrev.addClass('disable');
+			
+				tabItems.css({width: itemWidth})
+				tabList.css({width: pageWidth * pageNum});
+				
+				pageNum--; // 0부터 시작하는 인덱스로 사용하기위해 1을 뺌
+				
+				function updateBtnState() {
+					btnPrev.removeClass('disable');
+					btnNext.removeClass('disable');
+					if (currentPage == 0) {
+						btnPrev.addClass('disable');
+					}
+					if (currentPage == pageNum) {
+						btnNext.addClass('disable');
+					}
+				}
+				
+				btnPrev.on('click', function() {
+					currentPage = currentPage - 1 > 0 ? currentPage - 1 : 0;
+					tabList.stop().animate({'margin-left': -(currentPage * pageWidth)});
+					updateBtnState();
+				});
+				btnNext.on('click', function() {
+					currentPage = currentPage + 1 > pageNum ? pageNum : currentPage + 1;
+					tabList.stop().animate({'margin-left': -(currentPage * pageWidth)});
+					updateBtnState();
+				});
+			
+			} else {
+				btnPrev.addClass('disable');
+				btnNext.addClass('disable');
+			}
+		}
+				
+			
+
+	};
+	
+})();
+
+
+
+
