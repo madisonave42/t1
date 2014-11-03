@@ -98,17 +98,18 @@ header .header_tab>ul>li>a{
 header .header_tab>ul>li>a.on{background-position:0 bottom; color:#fff;}
 header .header_tab>ul>li>a:hover{background-position:0 bottom; color:#fff;}
 
-/* monitoring - submenu */
-header .header_tab .submenu{position:absolute; left:0; width:100%; height:87px; line-height:87px; background:#e7e7e7; border-bottom:1px solid #d1d1d1; font-size:16px; z-index:30; text-align:center; display:none; border-top:3px solid #ff743d;}
-header .header_tab .submenu>ul{display:inline-block;}
-header .header_tab .submenu>ul a{color:#1f252d; font-weight:bold;}
-header .header_tab .submenu>ul a:hover{color:#ff743d;}
-header .header_tab .submenu>ul>li{float:left; padding-left:16px; background:url(/images/common/bg_gnb_bar.png) no-repeat left center; margin-right:18px; }
+/* submenu */
+header .header_tab .submenu{position:absolute; width:181px; background:#e7e7e7; border-bottom:1px solid #d1d1d1; font-size:15px; z-index:30; display:none; border-top:3px solid #ff743d;}
+header .header_tab .submenu>ul{margin:0 15px;}
+header .header_tab .submenu>ul a{display:block; width:100%; color:#1f252d; font-weight:bold; padding:5px 0 5px 5px; box-sizing:border-box;}
+header .header_tab .submenu>ul a:hover{background:#ff743d; color:#fff;}
+header .header_tab .submenu>ul>li{padding:10px 0; border-top:1px solid #c7c7c7;}
+header .header_tab .submenu>ul>li:first-child{border:0;}
 header .header_tab .submenu>ul>li.topology,
-header .header_tab .submenu>ul>li.vnf{padding:0; background:none;}
-header .header_tab .submenu>ul>li.task{margin:0;}
-header .header_tab .submenu>ul>li .sub>li{float:left; margin-left:15px;}
-header .header_tab .submenu>ul>li .sub>li:first-child{margin:0;}
+header .header_tab .submenu>ul>li.vnf{}
+header .header_tab .submenu>ul>li.task{}
+header .header_tab .submenu>ul>li .sub>li{padding:0;}
+header .header_tab .submenu>ul>li .sub>li:first-child{}
 
 header .signal{width:246px; height:42px; margin:20px 200px 0 0; background:#1f252d; float:left;}
 header .signal>a{display:block; float:left; height:42px; line-height:41px; text-align:center; color:#fff;}

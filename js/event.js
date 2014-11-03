@@ -9,9 +9,11 @@
 	});
 	
 	$('.header_tab .catalogue').on('mouseenter', function(){
+		$(this).children('a').addClass('on');
 		$(this).children('.submenu').show(); 
 	});
 	$('.header_tab .catalogue').on('mouseleave', function(){
+		$(this).children('a').removeClass('on');
 		$(this).children('.submenu').hide();
 	});
 	// 편집 테이블 열 개수 계산 & 포커스 border
