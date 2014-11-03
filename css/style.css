@@ -92,10 +92,31 @@ header{height:62px; background:#2d3541;	border-bottom:3px solid #ff743d; positio
 header .logo{float:left;}
 header .right_menu{float:right;}
 header .header_tab{float:left; margin:20px 30px 0 0;}
-header .header_tab ul li{float:left; margin-right:2px;}
-header .header_tab ul li a{
+header .header_tab>ul>li{float:left; margin-right:2px;}
+header .header_tab>ul>li>a{
 	display:block; width:181px; height:42px; background:url(/images/common/bg_tab.png) no-repeat 0 1px; text-align:center; line-height:42px; color:#8f8f8f;}
-header .header_tab ul li a.on{background-position:0 bottom; color:#fff;}
+header .header_tab>ul>li>a.on{background-position:0 bottom; color:#fff;}
+header .header_tab>ul>li>a:hover{background-position:0 bottom; color:#fff;}
+
+/* monitoring - submenu */
+header .header_tab .submenu{position:absolute; left:0; width:100%; height:87px; line-height:87px; background:#e7e7e7; border-bottom:1px solid #d1d1d1; font-size:16px; z-index:30; text-align:center; display:none; border-top:3px solid #ff743d;}
+header .header_tab .submenu>ul{display:inline-block;}
+header .header_tab .submenu>ul a{color:#1f252d; font-weight:bold;}
+header .header_tab .submenu>ul a:hover{color:#ff743d;}
+header .header_tab .submenu>ul>li{float:left; padding-left:16px; background:url(/images/common/bg_gnb_bar.png) no-repeat left center; margin-right:18px; }
+header .header_tab .submenu>ul>li.topology,
+header .header_tab .submenu>ul>li.vnf{padding:0; background:none;}
+header .header_tab .submenu>ul>li.task{margin:0;}
+header .header_tab .submenu>ul>li .sub>li{float:left; margin-left:15px;}
+header .header_tab .submenu>ul>li .sub>li:first-child{margin:0;}
+
+
+.no_nav nav ul.lnb>li{padding-right:19px; background:url(/images/common/bg_gnb_bar.png) no-repeat right center; margin-left:16px;}
+.no_nav nav ul.lnb>li:first-child{margin-left:0;}
+.no_nav nav ul.lnb>li:last-child{padding-right:0; background:none;}
+
+.no_nav nav ul.lnb>li ul>li{margin-left:15px;}
+.no_nav nav ul.lnb>li ul>li:first-child{margin-left:0;}
 
 header .signal{width:246px; height:42px; margin:20px 200px 0 0; background:#1f252d; float:left;}
 header .signal>a{display:block; float:left; height:42px; line-height:41px; text-align:center; color:#fff;}
@@ -125,30 +146,12 @@ header .login .user>p:last-child{color:#999;}
 .nav nav ul.lnb { }
 .nav nav ul.lnb > li { position: relative; }
 .nav nav ul.lnb > li > a {display:block; text-indent:-99999em; width:100px; height:100px;}
-.nav nav ul.lnb.catalogue > li > a { background:url(/images/common/lnb_catalogue.png) no-repeat; }
-.nav nav ul.lnb.topology > li > a { background:url(/images/common/lnb_monitoring.png) no-repeat; }
 .nav nav ul.lnb.new_vnf > li > a { background:url(/images/common/lnb_new_vnf.png) no-repeat; }
 .nav nav ul.lnb.scale_vnf > li > a { background:url(/images/common/lnb_scale_vnf.png) no-repeat; }
 
 /*==================== 
  * left menu style 
  =====================*/
-
-/* monitoring */
-.nav nav ul.lnb > li.topology > a         { background-position: 0px 0px; }
-.nav nav ul.lnb > li.statistics > a       { background-position: 0px -100px; }
-.nav nav ul.lnb > li.alarm > a            { background-position: 0px -200px; }
-.nav nav ul.lnb > li.task > a             { background-position: 0px -300px; }
-
-.nav nav ul.lnb > li.topology:hover > a   { background-position: -100px 0px; }
-.nav nav ul.lnb > li.statistics:hover > a { background-position: -100px -100px; }
-.nav nav ul.lnb > li.alarm:hover > a      { background-position: -100px -200px; }
-.nav nav ul.lnb > li.task:hover > a       { background-position: -100px -300px; }
-
-.nav nav ul.lnb > li.topology > a.on      { background-position: -100px 0px; }
-.nav nav ul.lnb > li.statistics > a.on    { background-position: -100px -100px; }
-.nav nav ul.lnb > li.alarm > a.on         { background-position: -100px -200px; }
-.nav nav ul.lnb > li.task > a.on          { background-position: -100px -300px; }
 
 /* catalogue */
 .nav nav ul.lnb > li.vnf > a              { background-position: 0px 0px; }
@@ -396,7 +399,7 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .login_wrap .login table.emphasis { margin-top: 35px; display: block; }
 .login_wrap .login table.emphasis > tbody > tr > th,
 .login_wrap .login table.emphasis > tbody > tr > td { border-bottom: 8px solid #fff; }
-.login_wrap .login table.emphasis > tbody > tr > td a.btn { height: 76px; color:#fffff2; background-color: #ff743d; line-height: 76px; border: 2px solid #d76500; }
+.login_wrap .login table.emphasis > tbody > tr > td input.btn { width:100px; height: 76px; color:#fffff2; background-color: #ff743d; line-height: 76px; border: 2px solid #d76500; }
 
 
 /* ==============

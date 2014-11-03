@@ -19,8 +19,48 @@
 		<nav class="header_tab">
 			<h1 class="blind">Main Menu</h1>
 			<ul>
-				<li><a href="#" class="emphasis on">Monitoring</a></li>
-				<li><a href="#" class="emphasis">Catalogue</a></li>
+				<li class="monitoring">
+					<a href="#" class="emphasis on">Monitoring</a>
+					
+					<div class="submenu">
+						<ul>
+							<li class="topology"><a href="#">Topology</a></li>
+							<li class="statistics">
+								<ul class="sub">
+									<li><a href="#">실시간 통계</a></li>
+									<li><a href="#">개별 통계</a></li>
+									<li><a href="#">비교 통계</a></li>
+								</ul>
+							</li>
+							<li class="alarm">
+								<ul class="sub">
+									<li><a href="#">현재 발생중인 알람</a></li>
+									<li><a href="#">실시간 알람</a></li>
+									<li><a href="#">알람 History</a></li>
+								</ul>
+							</li>
+							<li class="task">
+								<ul class="sub">
+									<li><a href="#">현재 진행중인 작업</a></li>
+									<li><a href="#">실시간 작업</a></li>
+									<li><a href="#">작업 History</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+				</li>
+				<li class="catalogue">
+					<a href="#" class="emphasis">Catalogue</a>
+					
+					<div class="submenu">
+						<ul class="lnb catalogue">
+							<li class="vnf"><a href="#">VNF Catalogue</a></li>
+							<li class="host"><a href="#" class="on">Host Catalogue</a></li>
+							<li class="network"><a href="#">Network Catalogue</a></li>
+						</ul>
+					</div>
+				</li>
 				<li><a href="#" class="emphasis">NS Instance</a></li>
 				<li><a href="#" class="emphasis">Accounts</a></li>
 			</ul>
@@ -43,37 +83,8 @@
 	</div>
 </header>
 
-<section class="container nav">
+<section class="container no_nav">
 	<h1 class="blind">Monitoring</h1>
-	
-	<!-- lnb modify -->
-	<nav>
-		<ul id="lnb" class="lnb topology">
-			<li class="topology"><a href="#">Topology</a></li>
-			<li class="statistics"><a href="#">Statistics</a>
-				<ul class="sub">
-					<li><a href="#">실시간 통계</a></li>
-					<li><a href="#">개별 통계</a></li>
-					<li><a href="#">비교 통계</a></li>
-				</ul>
-			</li>
-			<li class="alarm"><a href="#" class="on">Alarm</a>
-				<ul class="sub">
-					<li><a href="#">현재 발생중인 알람</a></li>
-					<li><a href="#">실시간 알람</a></li>
-					<li><a href="#">알람 History</a></li>
-				</ul>
-			</li>
-			<li class="task"><a href="#">Task</a>
-				<ul class="sub">
-					<li><a href="#">현재 진행중인 작업</a></li>
-					<li><a href="#">실시간 작업</a></li>
-					<li><a href="#">작업 History</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-	<!-- lnb modify -->
 	
 	<section class="contents">
 		<div class="page_heading_area clearfix">
