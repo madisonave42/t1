@@ -110,14 +110,6 @@ header .header_tab .submenu>ul>li.task{margin:0;}
 header .header_tab .submenu>ul>li .sub>li{float:left; margin-left:15px;}
 header .header_tab .submenu>ul>li .sub>li:first-child{margin:0;}
 
-
-.no_nav nav ul.lnb>li{padding-right:19px; background:url(/images/common/bg_gnb_bar.png) no-repeat right center; margin-left:16px;}
-.no_nav nav ul.lnb>li:first-child{margin-left:0;}
-.no_nav nav ul.lnb>li:last-child{padding-right:0; background:none;}
-
-.no_nav nav ul.lnb>li ul>li{margin-left:15px;}
-.no_nav nav ul.lnb>li ul>li:first-child{margin-left:0;}
-
 header .signal{width:246px; height:42px; margin:20px 200px 0 0; background:#1f252d; float:left;}
 header .signal>a{display:block; float:left; height:42px; line-height:41px; text-align:center; color:#fff;}
 header .signal>div{height:42px; line-height:41px; float:left; text-align:center; color:#fff;}
@@ -415,7 +407,6 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 .login_wrap .login table.emphasis > tbody > tr > th,
 .login_wrap .login table.emphasis > tbody > tr > td { border-bottom: 8px solid #fff; }
 .login_wrap .login table.emphasis > tbody > tr > td input.btn { width:100px; height: 76px; color:#fffff2; background-color: #ff743d; line-height: 76px; border: 2px solid #d76500; }
-
 
 /* ==============
  *  monitoring
