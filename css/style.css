@@ -222,6 +222,21 @@ header .login .user>p:last-child{color:#999;}
 
 .topology_tab .tab_1 { width: 25%; }
 .topology_tab .tab_2 { width: 25%; }
+
+.scrollable_tab {position:relative; padding:0 20px;}
+.scrollable_tab .scrollable_tab_container {margin-top:-20px; overflow:hidden;}
+.scrollable_tab .scrollable_tab_container .tab {margin:0;}
+.scrollable_tab .prev,
+.scrollable_tab .next {position:absolute; top:11px; width:0; height:0; border:7px solid #c1c1c1; border-top-color:transparent; border-bottom-color:transparent; text-indent:-9999px;}
+.scrollable_tab .prev {left:2px; border-left:none;}
+.scrollable_tab .next {right:2px; border-right:none;}
+.scrollable_tab .prev:hover {border-right-color:#535a63;}
+.scrollable_tab .next:hover {border-left-color:#535a63;}
+.scrollable_tab .prev.disable,
+.scrollable_tab .prev.disable:hover {border-right-color:#ddd; cursor:default;}
+.scrollable_tab .next.disable,
+.scrollable_tab .next.disable:hover {border-left-color:#ddd; cursor:default;}
+.scrollable_tab ul li {width:25%;}
 /* =================
  *  page each style
  * ================= */
@@ -400,6 +415,18 @@ select.search{min-width:100px; height:34px; border:1px solid #ddd;}
 
 
 /* ==============
+ *  monitoring
+ * ============== */
+ 
+/* Topology view */
+section.contents section.topology_detail {margin-top:21px; border-top:4px solid #e6e6e6;}
+.topology_detail_control {padding:10px; text-align:right;}
+.topology_detail_control a {display:inline-block; margin-left:8px; width:30px; height:30px; border:2px solid #505050; background:url(/images/common/icons_control.png) no-repeat; text-indent:9999px;}
+.topology_detail_control a.add {background-position:8px 8px;}
+.topology_detail_control a.remove {background-position:-36px 8px;}
+.topology_detail_control a.equal {background-position:-80px 8px;}
+ 
+ /* ==============
  *  statistics layout 
  * ============== */
  
