@@ -183,6 +183,14 @@ var topology = (function(){
 					}
 				}
 				
+				function checkCurrentPage() {
+					var idx = tabItems.index(tabItems.find('.on').parents('li'));
+					currentPage = Math.floor(idx / 4);
+					
+					tabList.css({'margin-left': -(currentPage * pageWidth)});
+					updateBtnState();
+				}
+				
 				btnPrev.on('click', function() {
 					currentPage = currentPage - 1 > 0 ? currentPage - 1 : 0;
 					tabList.stop().animate({'margin-left': -(currentPage * pageWidth)});
@@ -194,13 +202,12 @@ var topology = (function(){
 					updateBtnState();
 				});
 			
+				checkCurrentPage();
 			} else {
 				btnPrev.addClass('disable');
 				btnNext.addClass('disable');
 			}
 		}
-				
-			
 
 	};
 	
